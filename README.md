@@ -18,7 +18,7 @@ Dieses Projekt enthält die zu der Analyse dazugehörigen Testmodelle
 * Öffnen Sie in Eclipse die Analyse
   * Rechtsklick auf Paket "edu.kit.ipd.sdq.kamp4attack" -> "Run as" -> "Eclipse Application" (innere Instanz)
 * In innerer Instanz:
-	* Iﬃle -> mport -> General -> Existing Projects -> entpackten Ordner auswählen
+	* File -> Import -> General -> Existing Projects -> entpackten Ordner auswählen
 	* Select All -> Import
 	* Project -> Clean
 	* Eclipse neustarten
