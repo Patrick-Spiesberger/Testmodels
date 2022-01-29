@@ -35,6 +35,6 @@ Um Änderungen in den Testmodellen vorzunehmen, navigieren Sie zu "org.palladios
 und wählen Sie den entsprechnden Unterordner aus. In diesen Unterordnern liegen drei wesentliche Dateien:
 * x.attacker
 * x.context
-* x.system
+* x.system <br>
 Die genaue Spezifikation ist in dem README.md des Modells zu finden.
 Um Änderungen vorzunehmen eignet sich die Selection-Ansicht. Dort können Sie konkreteElemente aufrufen und in den Properties (falls nicht geöffnet: Window -> Show View -> Properties) ändern. Die Modelle müssen vor dem Ausführen gespeichert werden. 
