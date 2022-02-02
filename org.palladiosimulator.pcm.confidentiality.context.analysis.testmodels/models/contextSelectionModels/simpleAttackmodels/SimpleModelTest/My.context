@@ -24,10 +24,10 @@
     </policy>
     <policy id="_f4n-Iu4BEeuUMoY75qRdSg" entityName="access DB over Seff">
       <rule id="_ggG04O4BEeuUMoY75qRdSg">
-        <condition xsi:type="SimpleAttributeCondition" id="_TpWKRwzAEeyG_Kid0W_Zow" attribute="_sKKUUe4ZEeu1msiU_4h_hw"/>
+        <condition xsi:type="SimpleAttributeCondition" id="_TpWKRwzAEeyG_Kid0W_Zow" entityName="usageSpecification" attribute="_sKKUUe4ZEeu1msiU_4h_hw" only="true"/>
         <target>
           <match xsi:type="structure:MethodMatch" id="_j7n5gu4BEeuUMoY75qRdSg" entityName="AccessDB">
-            <methodspecification xsi:type="structure:ServiceRestriction" id="_o9kwce4BEeuUMoY75qRdSg">
+            <methodspecification xsi:type="structure:ServiceRestriction" id="_o9kwce4BEeuUMoY75qRdSg" entityName="userDB">
               <signature xsi:type="repository:OperationSignature" href="newRepository.repository#_J5tNwO2-Eeq6pfPMAIqEqg"/>
               <assemblycontext href="newAssembly.system#_nhYdQO2-Eeq6pfPMAIqEqg"/>
               <service href="newRepository.repository#_OE1xcO2-Eeq6pfPMAIqEqg"/>
@@ -45,10 +45,10 @@
       </attributevalue>
     </attribute>
     <attribute xsi:type="systemcontext:SimpleAttribute" id="_aOt44u4NEeuHWuGCDwkq6w" entityName="Role">
-      <attributevalue id="_bc-bwO4NEeuHWuGCDwkq6w">
+      <attributevalue id="_bc-bwO4NEeuHWuGCDwkq6w" entityName="main">
         <values>Maintenance</values>
       </attributevalue>
-      <attributevalue id="_dlTaMO4NEeuHWuGCDwkq6w">
+      <attributevalue id="_dlTaMO4NEeuHWuGCDwkq6w" entityName="root">
         <values>root</values>
       </attributevalue>
     </attribute>

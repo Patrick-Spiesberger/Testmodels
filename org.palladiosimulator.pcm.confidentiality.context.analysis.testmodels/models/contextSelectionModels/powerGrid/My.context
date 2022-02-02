@@ -23,7 +23,7 @@
   <policyset id="_7C0Q4S8jEeylPOrRpUZy4w" entityName="PowerGridRules">
     <policy id="_PZE_YS8kEeylPOrRpUZy4w" entityName="BackOffice">
       <rule id="_UFfrMC8kEeylPOrRpUZy4w" entityName="BackOfficeAdmin">
-        <condition xsi:type="SimpleAttributeCondition" id="_TAbEFy8lEeylPOrRpUZy4w" entityName="BackOfficeRoleCondition" attribute="_hpKEgi8kEeylPOrRpUZy4w"/>
+        <condition xsi:type="SimpleAttributeCondition" id="_TAbEFy8lEeylPOrRpUZy4w" entityName="BackOfficeRoleCondition" attribute="_hpKEgi8kEeylPOrRpUZy4w" only="true"/>
         <target>
           <match xsi:type="structure:EntityMatch" id="_rnPeQC8kEeylPOrRpUZy4w">
             <entity xsi:type="resourceenvironment:ResourceContainer" href="powerGrid.resourceenvironment#_bcPLUCwbEeylP6vhO63XvA"/>
@@ -58,7 +58,7 @@
     </policy>
     <policy id="_apPPkS8lEeylPOrRpUZy4w" entityName="ICS">
       <rule id="_b4-ZIC8lEeylPOrRpUZy4w" entityName="ICS BreakerExecution">
-        <condition xsi:type="SimpleAttributeCondition" id="_kflXty8nEeylPOrRpUZy4w" entityName="Only ICSUser" attribute="_lqiu8S8nEeylPOrRpUZy4w"/>
+        <condition xsi:type="SimpleAttributeCondition" id="_kflXty8nEeylPOrRpUZy4w" entityName="Only ICSUser" attribute="_lqiu8S8nEeylPOrRpUZy4w" only="true"/>
         <target>
           <match xsi:type="structure:MethodMatch" id="_t6G78i8oEeylPOrRpUZy4w">
             <methodspecification xsi:type="structure:ServiceRestriction" id="_vRMDoS8oEeylPOrRpUZy4w">

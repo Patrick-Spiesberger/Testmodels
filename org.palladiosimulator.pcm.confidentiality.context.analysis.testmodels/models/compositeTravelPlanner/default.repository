@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" id="_NaXnwINqEeyC7P9uEU4Q9Q">
+  <components__Repository xsi:type="repository:BasicComponent" id="_-bx6AGzpEeqas-IKudlqKw" entityName="TravelPlannerLogic">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_62bHcGzqEeqas-IKudlqKw" entityName="TravelPlannerLogic.providedITravelPlanner" providedInterface__OperationProvidedRole="_X9ojoGzqEeqas-IKudlqKw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_JqM9cGzuEeqas-IKudlqKw" entityName="TravelPlannerLogic.required.ICreditCardCenter" requiredInterface__OperationRequiredRole="_IwuUkGzqEeqas-IKudlqKw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_NgZy8GzuEeqas-IKudlqKw" entityName="TravelPlannerLogic.required.IAirline" requiredInterface__OperationRequiredRole="_19Rf0GztEeqas-IKudlqKw"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_CjjAoGzqEeqas-IKudlqKw" entityName="CreditCardCenterLogic">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_Vpf90GzqEeqas-IKudlqKw" entityName="CreditCardCenterLogic.provided.ICreditCardCenter" providedInterface__OperationProvidedRole="_IwuUkGzqEeqas-IKudlqKw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_myXJIG0fEeqKyf48wo8qfA" entityName="CreditCardCenterLogic.required.ICreditCardCenterDB"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_DOjsgGzqEeqas-IKudlqKw" entityName="TravelAgencyLogic">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_NO_aMGzrEeqas-IKudlqKw" entityName="TravelAgencyLogic.provided.ITravelAgency" providedInterface__OperationProvidedRole="_A0HN4GzrEeqas-IKudlqKw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_TmoxYGzuEeqas-IKudlqKw" entityName="TravelAgencyLogic.required.IAirline" requiredInterface__OperationRequiredRole="_19Rf0GztEeqas-IKudlqKw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_hBzmIG0nEeqy5fNd4LSp3w" entityName="TravelAgencyLogic.required.ICommissionsDB"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_GshoMGzqEeqas-IKudlqKw" entityName="AirlineLogic">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_DTPbYGzuEeqas-IKudlqKw" entityName="AirlineLogic.provided.IAirline" providedInterface__OperationProvidedRole="_19Rf0GztEeqas-IKudlqKw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_RLdIYGzuEeqas-IKudlqKw" entityName="AirlineLogic.required.ITravelAgency" requiredInterface__OperationRequiredRole="_A0HN4GzrEeqas-IKudlqKw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_-Xm38G0mEeqy5fNd4LSp3w" entityName="AirlineLogic.IFlightsDB.OperationRequiredRole2"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:CompositeComponent" id="_ONS34G0fEeqKyf48wo8qfA" entityName="CreditCardCenter">
+    <assemblyContexts__ComposedStructure id="_iozSwG0fEeqKyf48wo8qfA" entityName="Assembly_CreditCardCenterDB" encapsulatedComponent__AssemblyContext="_RB2qMG0fEeqKyf48wo8qfA"/>
+    <assemblyContexts__ComposedStructure id="_sAVC0G0fEeqKyf48wo8qfA" entityName="Assembly_CreditCardCenterLogic" encapsulatedComponent__AssemblyContext="_CjjAoGzqEeqas-IKudlqKw"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_dO5O0G0fEeqKyf48wo8qfA" entityName="CreditCardCenter.provided.ICreditCardCenter" providedInterface__OperationProvidedRole="_IwuUkGzqEeqas-IKudlqKw"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_VtYDIHHKEeqQIp35a0U06Q" entityName="CreditCardCenter.ICreditCardCenterDB.OperationProvidedRole2"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_RB2qMG0fEeqKyf48wo8qfA" entityName="CreditCardCenterDB">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_aYx9UG0fEeqKyf48wo8qfA" entityName="CreditCardCenterDB.provided.ICreditCardCenterDB"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_Z9qqcG0mEeqy5fNd4LSp3w" entityName="CommissionsDB">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_b7CWEG0mEeqy5fNd4LSp3w" entityName="CommissionsDB.ICommissionsDB.OperationProvidedRole1"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_dAOcgG0mEeqy5fNd4LSp3w" entityName="FlightsDB">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_eFFLwG0mEeqy5fNd4LSp3w" entityName="FlightsDB.IFlightsDB.OperationProvidedRole1"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:CompositeComponent" id="_f_IdoG0mEeqy5fNd4LSp3w" entityName="Airline">
+    <assemblyContexts__ComposedStructure id="_tNptYG0mEeqy5fNd4LSp3w" entityName="Assembly_AirlineLogic" encapsulatedComponent__AssemblyContext="_GshoMGzqEeqas-IKudlqKw"/>
+    <assemblyContexts__ComposedStructure id="_5EMdkG0mEeqy5fNd4LSp3w" entityName="Assembly_FlightsDB" encapsulatedComponent__AssemblyContext="_dAOcgG0mEeqy5fNd4LSp3w"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_mI4DEG0mEeqy5fNd4LSp3w" entityName="Airline.provided.IAirline" providedInterface__OperationProvidedRole="_19Rf0GztEeqas-IKudlqKw"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_fqAEUHHKEeqQIp35a0U06Q" entityName="Airline.IFlightsDB.OperationProvidedRole2"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_nbgvoG0mEeqy5fNd4LSp3w" entityName="Airline.required.ITravelAgency" requiredInterface__OperationRequiredRole="_A0HN4GzrEeqas-IKudlqKw"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:CompositeComponent" id="_UhXkYG0nEeqy5fNd4LSp3w" entityName="TravelAgency">
+    <assemblyContexts__ComposedStructure id="_o_iRsG0nEeqy5fNd4LSp3w" entityName="Assembly_TravelAgencyLogic" encapsulatedComponent__AssemblyContext="_DOjsgGzqEeqas-IKudlqKw"/>
+    <assemblyContexts__ComposedStructure id="_ps7jMG0nEeqy5fNd4LSp3w" entityName="Assembly_CommissionsDB" encapsulatedComponent__AssemblyContext="_Z9qqcG0mEeqy5fNd4LSp3w"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_Zh4Q4G0nEeqy5fNd4LSp3w" entityName="TravelAgency.provided.ITravelAgency" providedInterface__OperationProvidedRole="_A0HN4GzrEeqas-IKudlqKw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_WcLrQG0nEeqy5fNd4LSp3w" entityName="TravelAgency.required.IAirline" requiredInterface__OperationRequiredRole="_19Rf0GztEeqas-IKudlqKw"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:CompositeComponent" id="_qxTyEG27EeqTytEGo1dJMQ" entityName="TravelPlanner">
+    <assemblyContexts__ComposedStructure id="_AExvsG28EeqTytEGo1dJMQ" entityName="Assembly_TravelPlannerLogic" encapsulatedComponent__AssemblyContext="_-bx6AGzpEeqas-IKudlqKw"/>
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_wmAUkG27EeqTytEGo1dJMQ" entityName="TravelPlanner.provided.ITravelPlanner" providedInterface__OperationProvidedRole="_X9ojoGzqEeqas-IKudlqKw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_0GAQkG27EeqTytEGo1dJMQ" entityName="TravelPlanner.required.ICreditCardCenter" requiredInterface__OperationRequiredRole="_IwuUkGzqEeqas-IKudlqKw"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_5E1iEG27EeqTytEGo1dJMQ" entityName="TravelPlanner.required.IAirline" requiredInterface__OperationRequiredRole="_19Rf0GztEeqas-IKudlqKw"/>
+  </components__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_IwuUkGzqEeqas-IKudlqKw" entityName="ICreditCardCenter">
+    <signatures__OperationInterface id="_KITLgGzqEeqas-IKudlqKw" entityName="setCCD">
+      <parameters__OperationSignature dataType__Parameter="_LkZ9IGzqEeqas-IKudlqKw" parameterName="ccd"/>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_O7U1oGzqEeqas-IKudlqKw" entityName="getDeclassifiedCCD" returnType__OperationSignature="_LkZ9IGzqEeqas-IKudlqKw"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_X9ojoGzqEeqas-IKudlqKw" entityName="ITravelPlanner">
+    <signatures__OperationInterface id="_ZSy_wGzqEeqas-IKudlqKw" entityName="bookFlight" returnType__OperationSignature="_jZTVsGzqEeqas-IKudlqKw">
+      <parameters__OperationSignature dataType__Parameter="_b9E0sGzqEeqas-IKudlqKw" parameterName="flight"/>
+      <parameters__OperationSignature dataType__Parameter="_jZTVsGzqEeqas-IKudlqKw" parameterName="consent"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_A0HN4GzrEeqas-IKudlqKw" entityName="ITravelAgency">
+    <signatures__OperationInterface id="_CaJXkGzrEeqas-IKudlqKw" entityName="queryFlights" returnType__OperationSignature="_c0gL8GzqEeqas-IKudlqKw">
+      <parameters__OperationSignature parameterName="criteria">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_I0QUQGzrEeqas-IKudlqKw" entityName="bookCommission">
+      <parameters__OperationSignature dataType__Parameter="_lM5aQGzqEeqas-IKudlqKw" parameterName="commission"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_19Rf0GztEeqas-IKudlqKw" entityName="IAirline">
+    <signatures__OperationInterface id="_36O7wGztEeqas-IKudlqKw" entityName="queryFlights" returnType__OperationSignature="_c0gL8GzqEeqas-IKudlqKw">
+      <parameters__OperationSignature parameterName="query">
+        <dataType__Parameter xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+      </parameters__OperationSignature>
+    </signatures__OperationInterface>
+    <signatures__OperationInterface id="_4sXjUGztEeqas-IKudlqKw" entityName="bookFlight" returnType__OperationSignature="_jZTVsGzqEeqas-IKudlqKw">
+      <parameters__OperationSignature dataType__Parameter="_b9E0sGzqEeqas-IKudlqKw" parameterName="flight"/>
+      <parameters__OperationSignature dataType__Parameter="_LkZ9IGzqEeqas-IKudlqKw" parameterName="ccd"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_LkZ9IGzqEeqas-IKudlqKw" entityName="CCD"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_b9E0sGzqEeqas-IKudlqKw" entityName="Flight"/>
+  <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_c0gL8GzqEeqas-IKudlqKw" entityName="Flights" innerType_CollectionDataType="_b9E0sGzqEeqas-IKudlqKw"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_jZTVsGzqEeqas-IKudlqKw" entityName="Confirmation"/>
+  <dataTypes__Repository xsi:type="repository:CompositeDataType" id="_lM5aQGzqEeqas-IKudlqKw" entityName="Commission"/>
+</repository:Repository>
