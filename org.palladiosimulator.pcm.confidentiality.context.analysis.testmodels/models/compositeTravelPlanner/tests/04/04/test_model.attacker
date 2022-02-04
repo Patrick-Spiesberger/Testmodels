@@ -3,7 +3,7 @@
   <attackers>
     <attacker id="_e5aL8Kd4EeuyobD7xRWqAQ" entityName="AttackerComponent2Resource" attacks="_y29cwDl2EeyxuvclpmtFmA">
       <compromisedComponentsDetails id="_zTbDoH-xEeysYdu_Jb7UPQ" entityName="travelPlanner">
-        <compromisedComponents href="../../../default.system#_2pBlYMN-EeWst9mTsticNA"/>
+        <compromisedComponents href="../../../default.system#_wT59IG2pEeqDl7X_Gyem8w"/>
       </compromisedComponentsDetails>
     </attacker>
   </attackers>

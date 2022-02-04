@@ -3,7 +3,7 @@
   <attackers>
     <attacker id="_e5aL8Kd4EeuyobD7xRWqAQ" entityName="AttackerComponent2ResourceNoPropagation" attacks="_y29cwDl2EeyxuvclpmtFmA">
       <compromisedComponentsDetails id="_qtqtMH9NEeyqgNGZUQQwQw" entityName="agency">
-        <compromisedComponents href="../../../default.system#_0WeT8MN-EeWst9mTsticNA"/>
+        <compromisedComponents href="../../../default.system#_8q2rsG2pEeqDl7X_Gyem8w"/>
       </compromisedComponentsDetails>
     </attacker>
   </attackers>
