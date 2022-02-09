@@ -30,15 +30,6 @@ public class PowerGridCaseStudyTests extends AbstractChangeTests {
         this.PATH_MODIFICATION = "powerGrid/My.kamp4attackmodificationmarks";
         this.PATH_REPOSITORY = "powerGrid/target.repository";
         this.PATH_RESOURCES = "powerGrid/powerGrid.resourceenvironment";
-        
-//        this.PATH_ATTACKER = "contextSelection/powerGridContext/My.attacker";
-//        this.PATH_ASSEMBLY = "contextSelection/powerGridContext/powerGrid.system";
-//        this.PATH_ALLOCATION = "contextSelection/powerGridContext/powerGrid.allocation";
-//        this.PATH_CONTEXT = "contextSelection/powerGridContext/My.context";
-//        this.PATH_CONTEXT = "contextSelection/powerGridContext/My.context";
-//        this.PATH_MODIFICATION = "contextSelection/powerGridContext/My.kamp4attackmodificationmarks";
-//        this.PATH_REPOSITORY = "contextSelection/powerGridContext/target.repository";
-//        this.PATH_RESOURCES = "contextSelection/powerGridContext/powerGrid.resourceenvironment";
     }
 
     @Test

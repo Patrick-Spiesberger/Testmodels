@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import org.junit.jupiter.api.Test;
 import org.palladiosimulator.pcm.confidentiality.context.system.UsageSpecification;
@@ -15,60 +16,57 @@ import edu.kit.ipd.sdq.kamp4attack.model.modificationmarks.KAMP4attackModificati
 import edu.kit.ipd.sdq.kamp4attack.tests.change.AbstractChangeTests;
 
 public class TargetCaseStudyTests extends AbstractChangeTests {
-    public TargetCaseStudyTests() {
-        this.PATH_ATTACKER = "targetBreach/My.attacker";
-        this.PATH_ASSEMBLY = "targetBreach/target.system";
-        this.PATH_ALLOCATION = "targetBreach/target.allocation";
-        this.PATH_CONTEXT = "targetBreach/target.context";
-        this.PATH_MODIFICATION = "targetBreach/target.kamp4attackmodificationmarks";
-        this.PATH_REPOSITORY = "targetBreach/target.repository";
-        this.PATH_RESOURCES = "targetBreach/target.resourceenvironment";
-    }
+	public TargetCaseStudyTests() {
+		this.PATH_ATTACKER = "targetBreach/My.attacker";
+		this.PATH_ASSEMBLY = "targetBreach/target.system";
+		this.PATH_ALLOCATION = "targetBreach/target.allocation";
+		this.PATH_CONTEXT = "targetBreach/target.context";
+		this.PATH_MODIFICATION = "targetBreach/target.kamp4attackmodificationmarks";
+		this.PATH_REPOSITORY = "targetBreach/target.repository";
+		this.PATH_RESOURCES = "targetBreach/target.resourceenvironment";
+	}
 
+	@Test
+	void defaultCase() {
+		runAnalysis();
+	}
 
-    @Test
-    void defaultCase() {
-        runAnalysis();
-    }
+	@Test
+	void defaultCaseCorrectAssemblyNumber() {
+		runAnalysis();
+		final var change = (CredentialChange) this.modification.getChangePropagationSteps().get(0);
+		System.out.println(change.getCompromisedassembly().stream().map(this::mapAffectedAssembly)
+				.map(AssemblyContext::getEntityName).collect(Collectors.toList()));
+		assertEquals(7, change.getCompromisedassembly().size());
+		assertEquals(9, change.getCompromisedservice().size());
+		assertEquals(2, change.getContextchange().size());
+		assertEquals(1, change.getCompromisedlinkingresource().size());
+		assertEquals(5, change.getCompromisedresource().size());
 
-    @Test
-    void defaultCaseCorrectAssemblyNumber() {
-        runAnalysis();
-        final var change = (CredentialChange) this.modification.getChangePropagationSteps().get(0);
-        assertEquals(7, change.getCompromisedassembly().size());
-        assertEquals(9, change.getCompromisedservice().size());
-        assertEquals(2, change.getContextchange().size());
-        assertEquals(1, change.getCompromisedlinkingresource().size());
-        assertEquals(5, change.getCompromisedresource().size());
+		var containsAllAssemblies = change.getCompromisedassembly().stream().map(this::mapAffectedAssembly)
+				.map(AssemblyContext::getEntityName).allMatch(this::assemblyNameMatch);
 
-        
-        var containsAllAssemblies = change.getCompromisedassembly().stream()
-                .map(this::mapAffectedAssembly).map(AssemblyContext::getEntityName)
-                .allMatch(this::assemblyNameMatch);
+		var containsAllUsageSpecification = change.getContextchange().stream().map(ContextChange::getAffectedElement)
+				.map(UsageSpecification::getEntityName).allMatch(this::usageSpecificationNameMatch);
 
-        var containsAllUsageSpecification = change.getContextchange().stream().map(ContextChange::getAffectedElement)
-                .map(UsageSpecification::getEntityName).allMatch(this::usageSpecificationNameMatch);
+		assertTrue(containsAllAssemblies, "Not the excpected Assemblies are compromised");
+		assertTrue(containsAllUsageSpecification, "Not the expected UsageSpecifications are gathered");
 
+	}
 
+	private boolean assemblyNameMatch(String name) {
+		var set = Set.of("Assembly_BusinessServiceComponent", "Assembly_POSComponent1", "Assembly_ExternalSupplier",
+				"Assembly_Database", "Assembly_FTPComponent", "Assembly_POSComponent2", "Assembly_POSComponent3");
+		return set.contains(name);
+	}
 
-        assertTrue(containsAllAssemblies, "Not the excpected Assemblies are compromised");
-        assertTrue(containsAllUsageSpecification, "Not the expected UsageSpecifications are gathered");
+	private boolean usageSpecificationNameMatch(String name) {
+		var set = Set.of("UsageSupplier", "DomainAdmin");
+		return set.contains(name);
+	}
 
-    }
-
-    private boolean assemblyNameMatch(String name) {
-        var set = Set.of("Assembly_BusinessServiceComponent", "Assembly_POSComponent1", "Assembly_ExternalSupplier",
-                "Assembly_Database", "Assembly_FTPComponent", "Assembly_POSComponent2", "Assembly_POSComponent3");
-        return set.contains(name);
-    }
-
-    private boolean usageSpecificationNameMatch(String name) {
-        var set = Set.of("UsageSupplier", "DomainAdmin");
-        return set.contains(name);
-    }
-    
-    private AssemblyContext mapAffectedAssembly(CompromisedAssembly component) {
-    	return component.getAffectedElement().getCompromisedComponents().get(0);
-    }
+	private AssemblyContext mapAffectedAssembly(CompromisedAssembly component) {
+		return component.getAffectedElement().getCompromisedComponents().get(0);
+	}
 
 }

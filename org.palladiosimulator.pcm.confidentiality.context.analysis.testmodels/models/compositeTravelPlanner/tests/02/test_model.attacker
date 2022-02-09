@@ -5,6 +5,7 @@
       <compromisedComponentsDetails id="_kTCNoH-xEeysYdu_Jb7UPQ" entityName="travelPlanner">
         <compromisedComponents href="../../default.system#_wT59IG2pEeqDl7X_Gyem8w"/>
       </compromisedComponentsDetails>
+      <dataDecyptionKeyBag>&quot;Test&quot;</dataDecyptionKeyBag>
     </attacker>
   </attackers>
   <attacks>
