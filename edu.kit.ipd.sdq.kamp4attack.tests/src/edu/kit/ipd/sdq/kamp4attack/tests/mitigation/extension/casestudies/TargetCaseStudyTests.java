@@ -35,8 +35,6 @@ public class TargetCaseStudyTests extends AbstractChangeTests {
 	void defaultCaseCorrectAssemblyNumber() {
 		runAnalysis();
 		final var change = (CredentialChange) this.modification.getChangePropagationSteps().get(0);
-		System.out.println(change.getCompromisedassembly().stream().map(this::mapAffectedAssembly)
-				.map(AssemblyContext::getEntityName).collect(Collectors.toList()));
 		assertEquals(7, change.getCompromisedassembly().size());
 		assertEquals(9, change.getCompromisedservice().size());
 		assertEquals(2, change.getContextchange().size());

@@ -91,7 +91,7 @@
             <methodspecification xsi:type="structure:ServiceRestriction" id="_NverYfXsEeueBowf28vA5g">
               <signature xsi:type="repository:OperationSignature" href="../../../default.repository#_R6uH4MNyEeWPE-QAhbUzuQ"/>
               <assemblycontext href="../../../default.system#_0WeT8MN-EeWst9mTsticNA"/>
-              <service href="../../../default.repository#_brO1YN5fEeeel_96Qa_d5A"/>
+              <service href="../../../repository.repository#_brO1YN5fEeeel_96Qa_d5A"/>
             </methodspecification>
           </match>
         </target>
