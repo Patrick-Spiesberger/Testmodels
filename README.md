@@ -37,4 +37,4 @@ und wählen Sie den entsprechnden Unterordner aus. In diesen Unterordnern liegen
 * x.context
 * x.system <br>
 Die genaue Spezifikation ist in dem README.md des Modells zu finden.
-Um Änderungen vorzunehmen eignet sich die Selection-Ansicht. Dort können Sie konkreteElemente aufrufen und in den Properties (falls nicht geöffnet: Window -> Show View -> Properties) ändern. Die Modelle müssen vor dem Ausführen gespeichert werden. 
+Um Änderungen vorzunehmen eignet sich die Selection-Ansicht. Dort können Sie konkrete Elemente aufrufen und in den Properties (falls nicht geöffnet: Window -> Show View -> Properties) ändern. Die Modelle müssen vor dem Ausführen gespeichert werden. 
