@@ -1,6 +1,8 @@
 package edu.kit.ipd.sdq.kamp4attack.tests.mitigation.extension.change;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.palladiosimulator.pcm.confidentiality.attackerSpecification.AssemblyContextDetail;
+import org.palladiosimulator.pcm.confidentiality.attackerSpecification.AttackerFactory;
 import org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.AttackSpecificationFactory;
 import org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.AttackVector;
 import org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.CVEID;
@@ -9,7 +11,6 @@ import org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpe
 import org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.CWEVulnerability;
 import org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.ConfidentialityImpact;
 import org.palladiosimulator.pcm.confidentiality.attackerSpecification.attackSpecification.Privileges;
-import org.palladiosimulator.pcm.confidentiality.attackerSpecification.impl.AssemblyContextDetailImpl;
 import org.palladiosimulator.pcm.confidentiality.context.policy.Category;
 import org.palladiosimulator.pcm.confidentiality.context.policy.PermitType;
 import org.palladiosimulator.pcm.confidentiality.context.policy.Policy;
@@ -58,7 +59,7 @@ public abstract class ContextAbstractChangeTestsListEfforts extends AbstractMode
             final AssemblyContext assemblyComponent) {
         final var infectedAssembly = KAMP4attackModificationmarksFactory.eINSTANCE.createCompromisedAssembly();
         final var assemblyContext = assemblyComponent;
-        AssemblyContextDetailImpl stub = new AssemblyContextDetailImpl();
+        AssemblyContextDetail stub = AttackerFactory.eINSTANCE.createAssemblyContextDetail();
         stub.getCompromisedComponents().add(assemblyContext);
         stub.setId(assemblyContext.getId());
         infectedAssembly.setAffectedElement(stub);

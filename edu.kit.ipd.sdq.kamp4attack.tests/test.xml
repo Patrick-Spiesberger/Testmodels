@@ -1,47 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<PolicySet xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" PolicySetId="_7C0Q4S8jEeylPOrRpUZy4w" Version="0.0.1" PolicyCombiningAlgId="urn:oasis:names:tc:xacml:3.0:policy-combining-algorithm:deny-unless-permit">
-    <Description>Policies for PowerGrid. Automatically created by Palladio-XACML-Integration</Description>
+<PolicySet xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" PolicySetId="_SmfacfXoEeub3tcXgMY_nQ" Version="0.0.1" PolicyCombiningAlgId="urn:oasis:names:tc:xacml:3.0:policy-combining-algorithm:deny-unless-permit">
+    <Description>Policies for New System. Automatically created by Palladio-XACML-Integration</Description>
     <Target/>
-    <Policy PolicyId="_PZE_YS8kEeylPOrRpUZy4w" Version="0.0.1" RuleCombiningAlgId="urn:oasis:names:tc:xacml:3.0:rule-combining-algorithm:deny-unless-permit">
-        <Description>BackOffice</Description>
-        <Target/>
-        <Rule RuleId="_UFfrMC8kEeylPOrRpUZy4w" Effect="Permit">
-            <Description>BackOfficeAdmin</Description>
+    <Policy PolicyId="_7wxKcfXoEeub3tcXgMY_nQ" Version="0.0.1" RuleCombiningAlgId="urn:oasis:names:tc:xacml:3.0:rule-combining-algorithm:deny-unless-permit">
+        <Description>Travelplanner</Description>
+        <Target>
+            <AnyOf>
+                <AllOf>
+                    <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_E7AeTotLEey-z92Yi6yUuA aName</AttributeValue>
+                        <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                    </Match>
+                </AllOf>
+                <AllOf>
+                    <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_Lq-ZYMN4EeWPE-QAhbUzuQ MobilePhone</AttributeValue>
+                        <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                    </Match>
+                </AllOf>
+            </AnyOf>
+        </Target>
+        <Rule RuleId="_PAypoPXpEeub3tcXgMY_nQ" Effect="Permit">
+            <Description>bookSelected</Description>
             <Target>
                 <AnyOf>
                     <AllOf>
                         <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
-                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_bcPLUCwbEeylP6vhO63XvA Workstation01</AttributeValue>
-                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_GmUUEMN1EeWPE-QAhbUzuQ</AttributeValue>
+                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action" AttributeId="urn:oasis:names:tc:xacml:1.0:action:action-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
                         </Match>
-                    </AllOf>
-                    <AllOf>
                         <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
-                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_RGEX4C2_EeyiUoiCEbquLw Workstation02</AttributeValue>
-                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
-                        </Match>
-                    </AllOf>
-                    <AllOf>
-                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
-                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_cyRxMCwbEeylP6vhO63XvA CallCenter</AttributeValue>
-                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
-                        </Match>
-                    </AllOf>
-                    <AllOf>
-                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
-                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_K4S34CwbEeylP6vhO63XvA CorporateNetwork</AttributeValue>
-                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
-                        </Match>
-                    </AllOf>
-                    <AllOf>
-                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
-                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_eGWBICwbEeylP6vhO63XvA DataCenter</AttributeValue>
-                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
-                        </Match>
-                    </AllOf>
-                    <AllOf>
-                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
-                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_V9xXgCwbEeylP6vhO63XvA VPNBridgeExternal</AttributeValue>
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_E6_3UYtLEey-z92Yi6yUuA aName</AttributeValue>
                             <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
                         </Match>
                     </AllOf>
@@ -49,38 +38,114 @@
             </Target>
             <Condition>
                 <Apply FunctionId="urn:oasis:names:tc:xacml:3.0:function:any-of">
-                    <Description>BackOfficeRoleCondition</Description>
+                    <Description>customerAuthenticated</Description>
                     <Function FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal"/>
-                    <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">BackOfficeAdmin</AttributeValue>
-                    <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_8fjUoi8jEeylPOrRpUZy4w" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+                    <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">customer</AttributeValue>
+                    <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_fG18ovXoEeub3tcXgMY_nQ" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+                </Apply>
+            </Condition>
+        </Rule>
+        <Rule RuleId="_ZQtDMAZQEeyAI7-VwtP_pw" Effect="Permit">
+            <Description>getFlightOffers</Description>
+            <Target>
+                <AnyOf>
+                    <AllOf>
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_602gYM5lEeWFJak7Wqvc0g</AttributeValue>
+                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action" AttributeId="urn:oasis:names:tc:xacml:1.0:action:action-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                        </Match>
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_E7AeQItLEey-z92Yi6yUuA aName</AttributeValue>
+                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                        </Match>
+                    </AllOf>
+                </AnyOf>
+            </Target>
+            <Condition>
+                <Apply FunctionId="urn:oasis:names:tc:xacml:3.0:function:any-of">
+                    <Description>aName</Description>
+                    <Function FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal"/>
+                    <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">customer</AttributeValue>
+                    <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_fG18ovXoEeub3tcXgMY_nQ" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+                </Apply>
+            </Condition>
+        </Rule>
+        <Rule RuleId="_wVAFQAZQEeyAI7-VwtP_pw" Effect="Permit">
+            <Description>confirmBooking</Description>
+            <Target>
+                <AnyOf>
+                    <AllOf>
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_JstSUNTzEee-_bZGhm8PwA</AttributeValue>
+                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action" AttributeId="urn:oasis:names:tc:xacml:1.0:action:action-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                        </Match>
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_E7AeR4tLEey-z92Yi6yUuA aName</AttributeValue>
+                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                        </Match>
+                    </AllOf>
+                </AnyOf>
+            </Target>
+            <Condition>
+                <Apply FunctionId="urn:oasis:names:tc:xacml:3.0:function:any-of">
+                    <Description>aName</Description>
+                    <Function FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal"/>
+                    <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">customer</AttributeValue>
+                    <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_fG18ovXoEeub3tcXgMY_nQ" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+                </Apply>
+            </Condition>
+        </Rule>
+        <Rule RuleId="_f6ylYDjAEey9mszNksodxw" Effect="Permit">
+            <Description>AccessSmartphone</Description>
+            <Target>
+                <AnyOf>
+                    <AllOf>
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_Lq-ZYMN4EeWPE-QAhbUzuQ MobilePhone</AttributeValue>
+                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                        </Match>
+                    </AllOf>
+                </AnyOf>
+            </Target>
+            <Condition>
+                <Apply FunctionId="urn:oasis:names:tc:xacml:3.0:function:any-of">
+                    <Description>aName</Description>
+                    <Function FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal"/>
+                    <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">User</AttributeValue>
+                    <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_fG18ovXoEeub3tcXgMY_nQ" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
                 </Apply>
             </Condition>
         </Rule>
     </Policy>
-    <Policy PolicyId="_apPPkS8lEeylPOrRpUZy4w" Version="0.0.1" RuleCombiningAlgId="urn:oasis:names:tc:xacml:3.0:rule-combining-algorithm:deny-unless-permit">
-        <Description>ICS</Description>
-        <Target/>
-        <Rule RuleId="_b4-ZIC8lEeylPOrRpUZy4w" Effect="Permit">
-            <Description>ICS BreakerExecution</Description>
+    <Policy PolicyId="_lwaKQfXrEeueBowf28vA5g" Version="0.0.1" RuleCombiningAlgId="urn:oasis:names:tc:xacml:3.0:rule-combining-algorithm:deny-unless-permit">
+        <Description>TravelAgency</Description>
+        <Target>
+            <AnyOf>
+                <AllOf>
+                    <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_E7AeZYtLEey-z92Yi6yUuA aName</AttributeValue>
+                        <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                    </Match>
+                </AllOf>
+                <AllOf>
+                    <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_HM_VsMN5EeWPE-QAhbUzuQ AgencyServer</AttributeValue>
+                        <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                    </Match>
+                </AllOf>
+            </AnyOf>
+        </Target>
+        <Rule RuleId="_mM7uMPXrEeueBowf28vA5g" Effect="Permit">
+            <Description>getFlightOffers</Description>
             <Target>
                 <AnyOf>
                     <AllOf>
                         <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
-                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_2pY08CwiEeylP6vhO63XvA</AttributeValue>
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_R6uH4MNyEeWPE-QAhbUzuQ</AttributeValue>
                             <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action" AttributeId="urn:oasis:names:tc:xacml:1.0:action:action-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
                         </Match>
                         <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
-                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_Q-4sUCzDEeyiUoiCEbquLw Assembly_DMSClientApplication</AttributeValue>
-                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
-                        </Match>
-                    </AllOf>
-                    <AllOf>
-                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
-                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_ecImwCwiEeylP6vhO63XvA</AttributeValue>
-                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action" AttributeId="urn:oasis:names:tc:xacml:1.0:action:action-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
-                        </Match>
-                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
-                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_UsPu4CzDEeyiUoiCEbquLw Assembly_DMSServerApplication</AttributeValue>
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_E7AeV4tLEey-z92Yi6yUuA aName</AttributeValue>
                             <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
                         </Match>
                     </AllOf>
@@ -88,20 +153,164 @@
             </Target>
             <Condition>
                 <Apply FunctionId="urn:oasis:names:tc:xacml:3.0:function:any-of">
-                    <Description>Only ICSUser</Description>
+                    <Description>aName</Description>
                     <Function FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal"/>
-                    <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">ICSUser</AttributeValue>
-                    <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_8fjUoi8jEeylPOrRpUZy4w" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+                    <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">customer</AttributeValue>
+                    <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_fG18ovXoEeub3tcXgMY_nQ" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
                 </Apply>
             </Condition>
         </Rule>
-        <Rule RuleId="_NHHXQC85EeykYdnERVaxtw" Effect="Permit">
-            <Description>ICSBride</Description>
+        <Rule RuleId="_bm01sPXsEeueBowf28vA5g" Effect="Permit">
+            <Description>payCommsion</Description>
             <Target>
                 <AnyOf>
                     <AllOf>
                         <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
-                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_snL_0C2ZEeyiUoiCEbquLw ICS-VPN-Bridge</AttributeValue>
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_nXaBAMN0EeWPE-QAhbUzuQ</AttributeValue>
+                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action" AttributeId="urn:oasis:names:tc:xacml:1.0:action:action-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                        </Match>
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_E7AeXotLEey-z92Yi6yUuA aName</AttributeValue>
+                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                        </Match>
+                    </AllOf>
+                </AnyOf>
+            </Target>
+            <Condition>
+                <Apply FunctionId="urn:oasis:names:tc:xacml:3.0:function:any-of">
+                    <Description>aName</Description>
+                    <Function FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal"/>
+                    <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">customer</AttributeValue>
+                    <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_fG18ovXoEeub3tcXgMY_nQ" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+                </Apply>
+            </Condition>
+        </Rule>
+        <Rule RuleId="_6E_ocDjAEey9mszNksodxw" Effect="Permit">
+            <Description>serverAccess</Description>
+            <Target>
+                <AnyOf>
+                    <AllOf>
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_HM_VsMN5EeWPE-QAhbUzuQ AgencyServer</AttributeValue>
+                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                        </Match>
+                    </AllOf>
+                </AnyOf>
+            </Target>
+            <Condition>
+                <Apply FunctionId="urn:oasis:names:tc:xacml:3.0:function:any-of">
+                    <Description>AdminCheck</Description>
+                    <Function FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal"/>
+                    <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">AgencyAdmin</AttributeValue>
+                    <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_fG18ovXoEeub3tcXgMY_nQ" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+                </Apply>
+            </Condition>
+        </Rule>
+    </Policy>
+    <Policy PolicyId="_WOs1UQZREeyAI7-VwtP_pw" Version="0.0.1" RuleCombiningAlgId="urn:oasis:names:tc:xacml:3.0:rule-combining-algorithm:deny-unless-permit">
+        <Description>Airline</Description>
+        <Target>
+            <AnyOf>
+                <AllOf>
+                    <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_E7AefItLEey-z92Yi6yUuA aName</AttributeValue>
+                        <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                    </Match>
+                </AllOf>
+                <AllOf>
+                    <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_fuWBEMN4EeWPE-QAhbUzuQ AirlineServer</AttributeValue>
+                        <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                    </Match>
+                </AllOf>
+            </AnyOf>
+        </Target>
+        <Rule RuleId="_WhfOcAZREeyAI7-VwtP_pw" Effect="Permit">
+            <Description>bookFlight</Description>
+            <Target>
+                <AnyOf>
+                    <AllOf>
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_00dt8MNyEeWPE-QAhbUzuQ</AttributeValue>
+                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action" AttributeId="urn:oasis:names:tc:xacml:1.0:action:action-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                        </Match>
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_E7AebotLEey-z92Yi6yUuA aName</AttributeValue>
+                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                        </Match>
+                    </AllOf>
+                </AnyOf>
+            </Target>
+            <Condition>
+                <Apply FunctionId="urn:oasis:names:tc:xacml:3.0:function:any-of">
+                    <Description>aName</Description>
+                    <Function FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal"/>
+                    <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">customer</AttributeValue>
+                    <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_fG18ovXoEeub3tcXgMY_nQ" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+                </Apply>
+            </Condition>
+        </Rule>
+        <Rule RuleId="_rlksQAZREeyAI7-VwtP_pw" Effect="Permit">
+            <Description>getFlightOffers</Description>
+            <Target>
+                <AnyOf>
+                    <AllOf>
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_R6uH4MNyEeWPE-QAhbUzuQ</AttributeValue>
+                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action" AttributeId="urn:oasis:names:tc:xacml:1.0:action:action-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                        </Match>
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_E7AedYtLEey-z92Yi6yUuA aName</AttributeValue>
+                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                        </Match>
+                    </AllOf>
+                </AnyOf>
+            </Target>
+            <Condition>
+                <Apply FunctionId="urn:oasis:names:tc:xacml:3.0:function:any-of">
+                    <Description>aName</Description>
+                    <Function FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal"/>
+                    <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">customer</AttributeValue>
+                    <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_fG18ovXoEeub3tcXgMY_nQ" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+                </Apply>
+            </Condition>
+        </Rule>
+        <Rule RuleId="_BngFsDjDEeySeoNo6py9pw" Effect="Permit">
+            <Description>serverAccess</Description>
+            <Target>
+                <AnyOf>
+                    <AllOf>
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_fuWBEMN4EeWPE-QAhbUzuQ AirlineServer</AttributeValue>
+                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                        </Match>
+                    </AllOf>
+                </AnyOf>
+            </Target>
+            <Condition>
+                <Apply FunctionId="urn:oasis:names:tc:xacml:3.0:function:any-of">
+                    <Description>aName</Description>
+                    <Function FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal"/>
+                    <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">AirlineAdmin</AttributeValue>
+                    <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_fG18ovXoEeub3tcXgMY_nQ" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+                </Apply>
+            </Condition>
+        </Rule>
+    </Policy>
+    <Policy PolicyId="_hUMUUQZXEeyAI7-VwtP_pw" Version="0.0.1" RuleCombiningAlgId="urn:oasis:names:tc:xacml:3.0:rule-combining-algorithm:deny-unless-permit">
+        <Description>CreditCard</Description>
+        <Target/>
+        <Rule RuleId="_mn1YMAZXEeyAI7-VwtP_pw" Effect="Permit">
+            <Description>declassifyCCD</Description>
+            <Target>
+                <AnyOf>
+                    <AllOf>
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_Mbgp8HZrEeaE4tGRMtTb7A</AttributeValue>
+                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action" AttributeId="urn:oasis:names:tc:xacml:1.0:action:action-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                        </Match>
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_E7Aeh4tLEey-z92Yi6yUuA aName</AttributeValue>
                             <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
                         </Match>
                     </AllOf>
@@ -113,14 +322,82 @@
                     <Apply FunctionId="urn:oasis:names:tc:xacml:3.0:function:any-of">
                         <Description>aName</Description>
                         <Function FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal"/>
-                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">ICSUser</AttributeValue>
-                        <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_8fjUoi8jEeylPOrRpUZy4w" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">customer</AttributeValue>
+                        <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_fG18ovXoEeub3tcXgMY_nQ" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
                     </Apply>
                     <Apply FunctionId="urn:oasis:names:tc:xacml:3.0:function:any-of">
                         <Description>aName</Description>
                         <Function FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal"/>
-                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">VPNGateway</AttributeValue>
-                        <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_8fjUoi8jEeylPOrRpUZy4w" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Home</AttributeValue>
+                        <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_AqKRogZYEeyAI7-VwtP_pw" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+                    </Apply>
+                </Apply>
+            </Condition>
+        </Rule>
+        <Rule RuleId="_PHSCgAZYEeyAI7-VwtP_pw" Effect="Permit">
+            <Description>releaseCCD</Description>
+            <Target>
+                <AnyOf>
+                    <AllOf>
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_jergYN5bEeeel_96Qa_d5A</AttributeValue>
+                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action" AttributeId="urn:oasis:names:tc:xacml:1.0:action:action-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                        </Match>
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_E7AekItLEey-z92Yi6yUuA aName</AttributeValue>
+                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                        </Match>
+                    </AllOf>
+                </AnyOf>
+            </Target>
+            <Condition>
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:and">
+                    <Description>aName</Description>
+                    <Apply FunctionId="urn:oasis:names:tc:xacml:3.0:function:any-of">
+                        <Description>aName</Description>
+                        <Function FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal"/>
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">declassified</AttributeValue>
+                        <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_f4xTY_XpEeub3tcXgMY_nQ" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+                    </Apply>
+                    <Apply FunctionId="urn:oasis:names:tc:xacml:3.0:function:any-of">
+                        <Description>aName</Description>
+                        <Function FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal"/>
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">customer</AttributeValue>
+                        <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_fG18ovXoEeub3tcXgMY_nQ" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+                    </Apply>
+                </Apply>
+            </Condition>
+        </Rule>
+        <Rule RuleId="_WuI6kAcmEeyfdfV5US28Ng" Effect="Permit">
+            <Description>setCreditCard</Description>
+            <Target>
+                <AnyOf>
+                    <AllOf>
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_N6idsMN3EeWPE-QAhbUzuQ</AttributeValue>
+                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action" AttributeId="urn:oasis:names:tc:xacml:1.0:action:action-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                        </Match>
+                        <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+                            <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">_E7AemYtLEey-z92Yi6yUuA aName</AttributeValue>
+                            <AttributeDesignator Category="urn:oasis:names:tc:xacml:3.0:attribute-category:resource" AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="false"/>
+                        </Match>
+                    </AllOf>
+                </AnyOf>
+            </Target>
+            <Condition>
+                <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:and">
+                    <Description>aName</Description>
+                    <Apply FunctionId="urn:oasis:names:tc:xacml:3.0:function:any-of">
+                        <Description>aName</Description>
+                        <Function FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal"/>
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">customer</AttributeValue>
+                        <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_fG18ovXoEeub3tcXgMY_nQ" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+                    </Apply>
+                    <Apply FunctionId="urn:oasis:names:tc:xacml:3.0:function:any-of">
+                        <Description>aName</Description>
+                        <Function FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal"/>
+                        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">Home</AttributeValue>
+                        <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_AqKRogZYEeyAI7-VwtP_pw" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
                     </Apply>
                 </Apply>
             </Condition>

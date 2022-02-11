@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.junit.jupiter.api.Test;
 import org.palladiosimulator.pcm.confidentiality.attackerSpecification.AssemblyContextDetail;
-import org.palladiosimulator.pcm.confidentiality.attackerSpecification.impl.AssemblyContextDetailImpl;
+import org.palladiosimulator.pcm.confidentiality.attackerSpecification.AttackerFactory;
 
 import edu.kit.ipd.sdq.kamp4attack.model.modificationmarks.KAMP4attackModificationmarks.CredentialChange;
 
@@ -15,7 +15,7 @@ class ContextConvertingInputModelTest extends ContextAbstractChangeTestsListEffo
 	@Test
 	void testTransformationAssembly() {
 
-		AssemblyContextDetail stub = new AssemblyContextDetailImpl();
+		AssemblyContextDetail stub = AttackerFactory.eINSTANCE.createAssemblyContextDetail();
 		stub.getCompromisedComponents().add(this.assembly.getAssemblyContexts__ComposedStructure().get(0));
 		stub.setEntityName(this.assembly.getAssemblyContexts__ComposedStructure().get(0).getEntityName());
 		stub.setId(this.assembly.getAssemblyContexts__ComposedStructure().get(0).getId());
@@ -101,7 +101,7 @@ class ContextConvertingInputModelTest extends ContextAbstractChangeTestsListEffo
 
 	@Test
 	void testAllTransfomations() {
-		AssemblyContextDetail stub = new AssemblyContextDetailImpl();
+		AssemblyContextDetail stub = AttackerFactory.eINSTANCE.createAssemblyContextDetail();
 		stub.getCompromisedComponents().add(this.assembly.getAssemblyContexts__ComposedStructure().get(0));
 		stub.setEntityName(this.assembly.getAssemblyContexts__ComposedStructure().get(0).getEntityName());
 		stub.setId(this.assembly.getAssemblyContexts__ComposedStructure().get(0).getId());
