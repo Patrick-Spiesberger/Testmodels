@@ -60,8 +60,8 @@ public class CompositeCredentialsPropagationTests extends CompositeTravelPlanner
 
     @Override
     protected boolean checkServiceRestriction(ServiceRestriction servicerestriction1) {
-        var setAssembly = Set.of("TravelPlanner <TravelPlanner>", "CreditCardCenter <CreditCardCenter>",
-                "Airline <Airline>", "TravelAgency <TravelAgency>");
+        var setAssembly = Set.of("Assembly_TravelPlanner", "Assembly_CreditCardCenter",
+        		"Assembly_Airline", "Assembly_TravelAgency");
 
         var equalAssembly = setAssembly.contains(servicerestriction1.getAssemblycontext().getEntityName());
         if (!equalAssembly) {

@@ -6,4 +6,5 @@
   <vulnerabilites/>
   <categoryspecification/>
   <systemintegration/>
+  <mitigation/>
 </attacker:AttackerSpecification>
