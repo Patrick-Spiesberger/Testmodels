@@ -1,4 +1,4 @@
-package edu.kit.ipd.sdq.kamp4attack.tests.mitigation.extionsion.tests;
+package edu.kit.ipd.sdq.kamp4attack.tests.mitigation.extension.tests;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
