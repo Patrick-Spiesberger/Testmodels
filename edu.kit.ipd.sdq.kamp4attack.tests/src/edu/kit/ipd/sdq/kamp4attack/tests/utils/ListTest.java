@@ -4,15 +4,29 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.List;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.palladiosimulator.pcm.confidentiality.context.system.SystemFactory;
+import org.palladiosimulator.pcm.confidentiality.context.system.UsageSpecification;
 
 import edu.kit.ipd.sdq.kamp4attack.core.contextSelection.ListOperations;
 
 class ListTest {
 
 	private ListOperations operation;
+
+	private List<UsageSpecification> createSpecification(int length) {
+		List<UsageSpecification> usages = new LinkedList<>();
+		for (int i = 0; i < length; i++) {
+			UsageSpecification usage = SystemFactory.eINSTANCE.createUsageSpecification();
+			usage.setId(String.valueOf(i));
+			usage.setEntityName(String.valueOf(i));
+			usages.add(usage);
+		}
+		return usages;
+	}
 
 	@BeforeEach
 	void setUP() {
@@ -28,18 +42,17 @@ class ListTest {
 		assertTrue(operation.getCombinationsAllTest(list).toString()
 				.equals("[[1, 2, 3], [2, 3], [1, 3], [3], [1, 2], [2], [1], []]"));
 	}
-//
-//	@Test
-//	void testGetTwentyComb() {
-//		LinkedList<Integer> list = new LinkedList<>();
-//		for (int i = 1; i <= 20; i++) {
-//			list.add(i);
-//		}
-//		operation.calculateLists(list);
-//		List<List<UsageSpecification>> result = operation.calculateLists(list);
-//		assertTrue(result.size() == 190); // nCr
-//
-//	}
+
+	@Test
+	void testGetTwentyComb() {
+		List<UsageSpecification> usages = createSpecification(20);
+		operation.calculateLists(usages, null);
+		operation.calculateLists(usages, null);
+		operation.calculateLists(usages, null);
+		operation.calculateLists(usages, null);
+		List<List<UsageSpecification>> result = operation.calculateLists(usages, null);
+		assertTrue(result.size() == 190); // 20 nChr 2
+	}
 
 	@Test
 	void calculateTimeSmall() {
@@ -62,45 +75,23 @@ class ListTest {
 		assertTrue(Arrays.equals(testArray, checkArray));
 	}
 
-//	@Test
-//	void otherUsageSpecifications() {
-//		LinkedList<String> list = new LinkedList<>();
-//		list.add("Palladio");
-//		list.add("Komponenten");
-//		list.add("Modell");
-//		assertTrue(operation.calculateLists(list).toString().equals(
-//				"[[], [Palladio], [Komponenten], [Palladio, Komponenten], [Modell], [Palladio, Modell], [Komponenten, Modell], [Palladio, Komponenten, Modell]]"));
-//	}
-//
-//	@Test
-//	void otherUsageSpecificationsBigInput() {
-//		LinkedList<String> list = new LinkedList<>();
-//		list.add("Palladio");
-//		list.add("Komponenten");
-//		list.add("KIT");
-//		list.add("Informatik");
-//		list.add("SDQ");
-//		list.add("KASTEL");
-//		list.add("Bachelor");
-//		list.add("Master");
-//		list.add(1);
-//		list.add(2);
-//		list.add(3);
-//		list.add(4);
-//		list.add(5);
-//		list.add(6);
-//		list.add(7);
-//		list.add(8);
-//		list.add(9);
-//		List<List<String>> runOne = operation.calculateLists(list);
-//		List<List<String>> runTwo = operation.calculateLists(list);
-//		List<List<String>> runThree = operation.calculateLists(list);
-//		List<List<String>> runFour = operation.calculateLists(list);
-//		boolean test1 = runOne.size() == 17 && runOne.get(0).size() == 1;
-//		boolean test2 = runTwo.size() == 136 && runTwo.get(0).size() == 2; 
-//		boolean test3 = runThree.size() == 680 && runThree.get(0).size() == 3; 
-//		boolean test4 = runFour.size() == 2380 && runFour.get(0).size() == 4; 
-//		assertTrue(test1 && test2 && test3 && test4);
-//	}
+	@Test
+	void otherUsageSpecifications() {
+		List<UsageSpecification> usages = createSpecification(3);
+		List<List<UsageSpecification>> calculatedList = operation.calculateLists(usages, null);
+		assertEquals(3, calculatedList.get(0).size());
+		assertEquals(2, calculatedList.get(1).size());
+		assertEquals(2, calculatedList.get(2).size());
+		assertEquals(1, calculatedList.get(3).size());
+	}
+
+	@Test
+	void otherUsageSpecificationsBigInput() {
+		List<UsageSpecification> usages = createSpecification(50);
+		for (int i = 0; i < 10; i++) {
+			operation.calculateLists(usages, null);
+		}
+		assertEquals(2118760, operation.calculateLists(usages, null).size()); //50 nCr 45
+	}
 
 }
