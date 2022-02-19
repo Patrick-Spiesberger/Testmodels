@@ -26,7 +26,7 @@ public class CompositeCredentialsPropagationTests extends CompositeTravelPlanner
 		assertEquals(5, change.getCompromisedassembly().size());
 		assertEquals(0, change.getCompromisedlinkingresource().size());
 		assertEquals(1, change.getCompromisedresource().size());
-		assertEquals(5, change.getCompromisedservice().size());
+		assertEquals(6, change.getCompromisedservice().size());
 		assertEquals(2, change.getContextchange().size());
 
 		assertTrue(checkAssembly(change));

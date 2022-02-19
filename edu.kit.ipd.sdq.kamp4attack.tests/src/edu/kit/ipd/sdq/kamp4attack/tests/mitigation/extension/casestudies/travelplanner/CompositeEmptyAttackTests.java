@@ -23,7 +23,7 @@ public class CompositeEmptyAttackTests extends CompositeTravelPlannerCaseStudy {
         assertEquals(1, change.getCompromisedassembly().size());
         assertEquals(0, change.getCompromisedlinkingresource().size());
         assertEquals(0, change.getCompromisedresource().size());
-        //assertEquals(3, change.getCompromisedservice().size());
+        assertEquals(1, change.getCompromisedservice().size());
         assertEquals(0, change.getContextchange().size());
 
         checkAssembly(change);
@@ -32,7 +32,7 @@ public class CompositeEmptyAttackTests extends CompositeTravelPlannerCaseStudy {
 //                .getAttackcomponent().get(0).getAffectedElement();
 
 
-        //assertEquals(10, change.getCompromiseddata().size());
+        assertEquals(6, change.getCompromiseddata().size());
 
 
     }
