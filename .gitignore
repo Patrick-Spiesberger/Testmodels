@@ -23,7 +23,9 @@ hs_err_pid*
 =======
 bin/
 
-
+edu.kit.ipd.sdq.kamp4attack.tests/.project
+org.palladiosimulator.pcm.confidentiality.context.analysis.testframework/.project
+org.palladiosimulator.pcm.confidentiality.context.analysis.testmodels/.project
 
 target/
 pom.xml.tag
