@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import org.junit.jupiter.api.Test;
 import org.palladiosimulator.pcm.confidentiality.context.system.UsageSpecification;
@@ -44,6 +45,12 @@ public class ContextPowerGridCaseStudyTests extends AbstractChangeTests {
 		runAnalysis();
 		final var change = (CredentialChange) this.modification.getChangePropagationSteps().get(0);
 		assertEquals(1, change.getCompromisedresource().size()); //5
+		System.out.println(change.getCompromisedassembly().get(0).getAffectedElement().getCompromisedComponents()
+				.stream().map(AssemblyContext::getEntityName).collect(Collectors.toList()));
+		System.out.println(change.getCompromisedassembly().get(1).getAffectedElement().getCompromisedComponents()
+				.stream().map(AssemblyContext::getEntityName).collect(Collectors.toList()));
+		System.out.println(change.getCompromisedassembly().get(2).getAffectedElement().getCompromisedComponents()
+				.stream().map(AssemblyContext::getEntityName).collect(Collectors.toList()));
 		assertEquals(3, change.getCompromisedassembly().size()); //7
 		assertEquals(3, change.getCompromisedservice().size()); //8
 		assertEquals(6, change.getContextchange().size()); //4

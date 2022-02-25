@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import org.junit.jupiter.api.Test;
 import org.palladiosimulator.pcm.confidentiality.context.system.UsageSpecification;
@@ -44,9 +45,12 @@ public class PowerGridCaseStudyTests extends AbstractChangeTests {
         final var change = (CredentialChange) this.modification.getChangePropagationSteps().get(0);
         assertEquals(5, change.getCompromisedresource().size());
         assertEquals(7, change.getCompromisedassembly().size());
-        assertEquals(10, change.getCompromisedservice().size());
+		assertEquals(8, change.getCompromisedservice().size());
         assertEquals(4, change.getContextchange().size());
         assertEquals(1, change.getCompromisedlinkingresource().size());
+        
+		System.out.println(change.getCompromisedservice().stream().map(CompromisedService::getAffectedElement)
+				.map(ServiceRestriction::getId).distinct().collect(Collectors.toList()));
 
         var containsRequiredAssemblies = change.getCompromisedassembly().stream()
                 .map(this::mapAffectedAssembly).map(AssemblyContext::getEntityName)

@@ -12,7 +12,7 @@
   <assemblyContexts__ComposedStructure id="_8q2rsG2pEeqDl7X_Gyem8w" entityName="Assembly_TravelAgency">
     <encapsulatedComponent__AssemblyContext xsi:type="repository:CompositeComponent" href="default.repository#_UhXkYG0nEeqy5fNd4LSp3w"/>
   </assemblyContexts__ComposedStructure>
-  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_0clpwG2pEeqDl7X_Gyem8w" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_x9r3cG0yEeqbLPEsWsJpeg" assemblyContext_ProvidedDelegationConnector="_wT59IG2pEeqDl7X_Gyem8w">
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_0clpwG2pEeqDl7X_Gyem8w" entityName="TravelPlaner _TravelPlannerLogic" outerProvidedRole_ProvidedDelegationConnector="_x9r3cG0yEeqbLPEsWsJpeg" assemblyContext_ProvidedDelegationConnector="_wT59IG2pEeqDl7X_Gyem8w">
     <innerProvidedRole_ProvidedDelegationConnector href="default.repository#_62bHcGzqEeqas-IKudlqKw"/>
   </connectors__ComposedStructure>
   <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_6JJj8G2pEeqDl7X_Gyem8w" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_wT59IG2pEeqDl7X_Gyem8w" providingAssemblyContext_AssemblyConnector="_18D4cG2pEeqDl7X_Gyem8w">
