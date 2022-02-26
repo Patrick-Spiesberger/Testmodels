@@ -48,9 +48,6 @@ public class PowerGridCaseStudyTests extends AbstractChangeTests {
 		assertEquals(8, change.getCompromisedservice().size());
         assertEquals(4, change.getContextchange().size());
         assertEquals(1, change.getCompromisedlinkingresource().size());
-        
-		System.out.println(change.getCompromisedservice().stream().map(CompromisedService::getAffectedElement)
-				.map(ServiceRestriction::getId).distinct().collect(Collectors.toList()));
 
         var containsRequiredAssemblies = change.getCompromisedassembly().stream()
                 .map(this::mapAffectedAssembly).map(AssemblyContext::getEntityName)
