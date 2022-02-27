@@ -46,12 +46,12 @@ class ListTest {
 	@Test
 	void testGetTwentyComb() {
 		List<UsageSpecification> usages = createSpecification(20);
-		operation.calculateLists(usages, null);
-		operation.calculateLists(usages, null);
-		operation.calculateLists(usages, null);
-		operation.calculateLists(usages, null);
+		operation.calculateLists(usages, null); //20 nCr 20
+		operation.calculateLists(usages, null); //empty List
+		operation.calculateLists(usages, null); //20 nCr 19
+		operation.calculateLists(usages, null); //20 nCr 1
 		List<List<UsageSpecification>> result = operation.calculateLists(usages, null);
-		assertTrue(result.size() == 190); // 20 nChr 2
+		assertTrue(result.size() == 190); // 20 nCr 18
 	}
 
 	@Test
@@ -90,7 +90,7 @@ class ListTest {
 		List<UsageSpecification> usages = createSpecification(50);
 		for (int i = 0; i < 10; i++) {
 			operation.calculateLists(usages, null);
-		}
+		} // 50 nCr 4
 		assertEquals(2118760, operation.calculateLists(usages, null).size()); //50 nCr 45
 	}
 
