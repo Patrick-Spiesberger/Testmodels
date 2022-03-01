@@ -116,37 +116,6 @@
     <semanticResources>models/contextSelectionModels/targetBreach/target.resourceenvironment</semanticResources>
     <semanticResources>models/contextSelectionModels/targetBreach/target.context</semanticResources>
     <semanticResources>models/contextSelectionModels/targetBreach/target.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/encryptionModels/powerGrid/My.attacker</semanticResources>
-    <semanticResources>models/encryptionModels/powerGrid/powerGrid.resourceenvironment</semanticResources>
-    <semanticResources>models/encryptionModels/powerGrid/My.context</semanticResources>
-    <semanticResources>models/encryptionModels/powerGrid/powerGrid.system</semanticResources>
-    <semanticResources>models/encryptionModels/powerGrid/powerGrid.repository</semanticResources>
-    <semanticResources>models/encryptionModels/simpleAttackmodels/PropagationUnitTests/newRepository.repository</semanticResources>
-    <semanticResources>models/encryptionModels/powerGrid/My.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/encryptionModels/powerGrid/powerGrid.allocation</semanticResources>
-    <semanticResources>models/encryptionModels/simpleAttackmodels/PropagationUnitTests/My.attacker</semanticResources>
-    <semanticResources>models/encryptionModels/simpleAttackmodels/PropagationUnitTests/My.context</semanticResources>
-    <semanticResources>models/encryptionModels/simpleAttackmodels/PropagationUnitTests/My.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/encryptionModels/simpleAttackmodels/PropagationUnitTests/newAllocation.allocation</semanticResources>
-    <semanticResources>models/encryptionModels/simpleAttackmodels/PropagationUnitTests/newResourceEnvironment.resourceenvironment</semanticResources>
-    <semanticResources>models/encryptionModels/simpleAttackmodels/PropagationUnitTests/newAssembly.system</semanticResources>
-    <semanticResources>models/encryptionModels/simpleAttackmodels/PropagationUnitTests/newUsageModel.usagemodel</semanticResources>
-    <semanticResources>models/encryptionModels/simpleAttackmodels/SimpleModelTest/My.attacker</semanticResources>
-    <semanticResources>models/encryptionModels/simpleAttackmodels/SimpleModelTest/My.context</semanticResources>
-    <semanticResources>models/encryptionModels/simpleAttackmodels/SimpleModelTest/newAssembly.system</semanticResources>
-    <semanticResources>models/encryptionModels/simpleAttackmodels/SimpleModelTest/newRepository.repository</semanticResources>
-    <semanticResources>models/encryptionModels/simpleAttackmodels/SimpleModelTest/newResourceEnvironment.resourceenvironment</semanticResources>
-    <semanticResources>models/encryptionModels/simpleAttackmodels/SimpleModelTest/My.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/encryptionModels/simpleAttackmodels/SimpleModelTest/newAllocation.allocation</semanticResources>
-    <semanticResources>models/encryptionModels/simpleAttackmodels/SimpleModelTest/newUsageModel.usagemodel</semanticResources>
-    <semanticResources>models/encryptionModels/targetBreach/AssemblyContextDetail.attacker</semanticResources>
-    <semanticResources>models/encryptionModels/targetBreach/target.system</semanticResources>
-    <semanticResources>models/encryptionModels/targetBreach/target.repository</semanticResources>
-    <semanticResources>models/encryptionModels/targetBreach/My.attacker</semanticResources>
-    <semanticResources>models/encryptionModels/targetBreach/target.allocation</semanticResources>
-    <semanticResources>models/encryptionModels/targetBreach/target.resourceenvironment</semanticResources>
-    <semanticResources>models/encryptionModels/targetBreach/target.context</semanticResources>
-    <semanticResources>models/encryptionModels/targetBreach/target.kamp4attackmodificationmarks</semanticResources>
     <semanticResources>models/simpleAttackmodels/PropagationUnitTests/newRepository.repository</semanticResources>
     <semanticResources>models/simpleAttackmodels/PropagationUnitTests/My.attacker</semanticResources>
     <semanticResources>models/simpleAttackmodels/PropagationUnitTests/My.context</semanticResources>
@@ -231,6 +200,37 @@
     <semanticResources>models/targetBreach/target.context</semanticResources>
     <semanticResources>models/targetBreach/target.kamp4attackmodificationmarks</semanticResources>
     <semanticResources>models/targetBreach/My.attacker</semanticResources>
+    <semanticResources>models/mitigationModels/powerGrid/My.attacker</semanticResources>
+    <semanticResources>models/mitigationModels/powerGrid/powerGrid.resourceenvironment</semanticResources>
+    <semanticResources>models/mitigationModels/powerGrid/My.context</semanticResources>
+    <semanticResources>models/mitigationModels/powerGrid/powerGrid.system</semanticResources>
+    <semanticResources>models/mitigationModels/powerGrid/powerGrid.repository</semanticResources>
+    <semanticResources>models/mitigationModels/simpleAttackmodels/PropagationUnitTests/newRepository.repository</semanticResources>
+    <semanticResources>models/mitigationModels/powerGrid/My.kamp4attackmodificationmarks</semanticResources>
+    <semanticResources>models/mitigationModels/powerGrid/powerGrid.allocation</semanticResources>
+    <semanticResources>models/mitigationModels/simpleAttackmodels/PropagationUnitTests/My.attacker</semanticResources>
+    <semanticResources>models/mitigationModels/simpleAttackmodels/PropagationUnitTests/My.context</semanticResources>
+    <semanticResources>models/mitigationModels/simpleAttackmodels/PropagationUnitTests/My.kamp4attackmodificationmarks</semanticResources>
+    <semanticResources>models/mitigationModels/simpleAttackmodels/PropagationUnitTests/newAllocation.allocation</semanticResources>
+    <semanticResources>models/mitigationModels/simpleAttackmodels/PropagationUnitTests/newResourceEnvironment.resourceenvironment</semanticResources>
+    <semanticResources>models/mitigationModels/simpleAttackmodels/PropagationUnitTests/newAssembly.system</semanticResources>
+    <semanticResources>models/mitigationModels/simpleAttackmodels/PropagationUnitTests/newUsageModel.usagemodel</semanticResources>
+    <semanticResources>models/mitigationModels/simpleAttackmodels/SimpleModelTest/My.attacker</semanticResources>
+    <semanticResources>models/mitigationModels/simpleAttackmodels/SimpleModelTest/My.context</semanticResources>
+    <semanticResources>models/mitigationModels/simpleAttackmodels/SimpleModelTest/newAssembly.system</semanticResources>
+    <semanticResources>models/mitigationModels/simpleAttackmodels/SimpleModelTest/newRepository.repository</semanticResources>
+    <semanticResources>models/mitigationModels/simpleAttackmodels/SimpleModelTest/newResourceEnvironment.resourceenvironment</semanticResources>
+    <semanticResources>models/mitigationModels/simpleAttackmodels/SimpleModelTest/My.kamp4attackmodificationmarks</semanticResources>
+    <semanticResources>models/mitigationModels/simpleAttackmodels/SimpleModelTest/newAllocation.allocation</semanticResources>
+    <semanticResources>models/mitigationModels/simpleAttackmodels/SimpleModelTest/newUsageModel.usagemodel</semanticResources>
+    <semanticResources>models/mitigationModels/targetBreach/AssemblyContextDetail.attacker</semanticResources>
+    <semanticResources>models/mitigationModels/targetBreach/target.system</semanticResources>
+    <semanticResources>models/mitigationModels/targetBreach/target.repository</semanticResources>
+    <semanticResources>models/mitigationModels/targetBreach/My.attacker</semanticResources>
+    <semanticResources>models/mitigationModels/targetBreach/target.allocation</semanticResources>
+    <semanticResources>models/mitigationModels/targetBreach/target.resourceenvironment</semanticResources>
+    <semanticResources>models/mitigationModels/targetBreach/target.context</semanticResources>
+    <semanticResources>models/mitigationModels/targetBreach/target.kamp4attackmodificationmarks</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_Br2OQJVJEeyMdeLhR9Q5bw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.palladiosimulator.editors.sirius.repository/description/repository.odesign#//@ownedViewpoints[name='Repository']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Bxva4JVJEeyMdeLhR9Q5bw" name="Repository Diagram" repPath="#_Bsix0JVJEeyMdeLhR9Q5bw" changeId="038b5686-b27d-4229-8fe5-8101150f02ca">
