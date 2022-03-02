@@ -16,7 +16,7 @@ class SimpleListEffortSevenTest extends AbstractModelTest {
 		this.PATH_ASSEMBLY = "contextSelectionModels/effortModels/simpleEffortModel/simpleEffort.system";
 		this.PATH_ALLOCATION = "contextSelectionModels/effortModels/simpleEffortModel/simpleEffort.allocation";
 		this.PATH_CONTEXT = "contextSelectionModels/effortModels/simpleEffortModel/effort.context";
-		this.PATH_MODIFICATION = "contextSelectionModels/effortModels/simpleEffortModel/simpleEffort.kamp4attackmodificationmarks";
+		this.PATH_MODIFICATION = "contextSelectionModels/effortModels/simpleEffortModel/modificationmarks/seven.kamp4attackmodificationmarks";
 		this.PATH_REPOSITORY = "contextSelectionModels/effortModels/simpleEffortModel/simpleEffort.repository";
 		this.PATH_USAGE = "contextSelectionModels/effortModels/simpleEffortModel/simpleEffort.usagemodel";
 		this.PATH_RESOURCES = "contextSelectionModels/effortModels/simpleEffortModel/simpleEffort.resourceenvironment";

@@ -242,6 +242,12 @@
     <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/attacker/sevenAttribute.attacker</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/attacker/fifteenAttribute.attacker</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/attacker/twentyfiveAttribute.attacker</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/attacker/twentyAttribute.attacker</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/modificationmarks/fifteen.kamp4attackmodificationmarks</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/modificationmarks/one.kamp4attackmodificationmarks</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/modificationmarks/seven.kamp4attackmodificationmarks</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/modificationmarks/twenty.kamp4attackmodificationmarks</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/modificationmarks/twentyfive.kamp4attackmodificationmarks</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_Br2OQJVJEeyMdeLhR9Q5bw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.palladiosimulator.editors.sirius.repository/description/repository.odesign#//@ownedViewpoints[name='Repository']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Bxva4JVJEeyMdeLhR9Q5bw" name="Repository Diagram" repPath="#_Bsix0JVJEeyMdeLhR9Q5bw" changeId="038b5686-b27d-4229-8fe5-8101150f02ca">

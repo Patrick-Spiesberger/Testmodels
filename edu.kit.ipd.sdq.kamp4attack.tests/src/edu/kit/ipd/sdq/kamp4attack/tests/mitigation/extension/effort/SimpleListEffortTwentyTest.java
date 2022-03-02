@@ -9,14 +9,14 @@ import edu.kit.ipd.sdq.kamp4attack.core.AttackPropagationAnalysis;
 import edu.kit.ipd.sdq.kamp4attack.model.modificationmarks.KAMP4attackModificationmarks.CredentialChange;
 import edu.kit.ipd.sdq.kamp4attack.tests.AbstractModelTest;
 
-class SimpleListEffortOneTest extends AbstractModelTest {
+class SimpleListEffortTwentyTest extends AbstractModelTest {
 
-	public SimpleListEffortOneTest() {
-		this.PATH_ATTACKER = "contextSelectionModels/effortModels/simpleEffortModel/attacker/oneAttribute.attacker";
+	public SimpleListEffortTwentyTest() {
+		this.PATH_ATTACKER = "contextSelectionModels/effortModels/simpleEffortModel/attacker/twentyAttribute.attacker";
 		this.PATH_ASSEMBLY = "contextSelectionModels/effortModels/simpleEffortModel/simpleEffort.system";
 		this.PATH_ALLOCATION = "contextSelectionModels/effortModels/simpleEffortModel/simpleEffort.allocation";
 		this.PATH_CONTEXT = "contextSelectionModels/effortModels/simpleEffortModel/effort.context";
-		this.PATH_MODIFICATION = "contextSelectionModels/effortModels/simpleEffortModel/modificationmarks/one.kamp4attackmodificationmarks";
+		this.PATH_MODIFICATION = "contextSelectionModels/effortModels/simpleEffortModel/modificationmarks/twenty.kamp4attackmodificationmarks";
 		this.PATH_REPOSITORY = "contextSelectionModels/effortModels/simpleEffortModel/simpleEffort.repository";
 		this.PATH_USAGE = "contextSelectionModels/effortModels/simpleEffortModel/simpleEffort.usagemodel";
 		this.PATH_RESOURCES = "contextSelectionModels/effortModels/simpleEffortModel/simpleEffort.resourceenvironment";
@@ -30,8 +30,7 @@ class SimpleListEffortOneTest extends AbstractModelTest {
 	}
 
 	@Test
-	void testSimpleCaseOneAttribute() {
-
+	void testSimpleCaseTwentyAttribute() {
 		final var steps = this.modification.getChangePropagationSteps();
 
 		assertEquals(1, steps.size());
