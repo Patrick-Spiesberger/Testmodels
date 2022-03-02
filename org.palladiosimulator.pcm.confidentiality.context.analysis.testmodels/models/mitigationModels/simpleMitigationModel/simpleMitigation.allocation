@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<allocation:Allocation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:allocation="http://palladiosimulator.org/PalladioComponentModel/Allocation/5.2" id="_pXO8QJlYEeydpc4YSVJolQ" entityName="simpleAllocation">
+  <targetResourceEnvironment_Allocation href="simpleMitigation.resourceenvironment#/"/>
+  <system_Allocation href="simpleMitigation.system#_rDGP4JlSEeydpc4YSVJolQ"/>
+  <allocationContexts_Allocation id="_4GWcEJlYEeydpc4YSVJolQ" entityName="AssemblyA">
+    <resourceContainer_AllocationContext href="simpleMitigation.resourceenvironment#_KSpC0ZlYEeydpc4YSVJolQ"/>
+    <assemblyContext_AllocationContext href="simpleMitigation.system#_KqbtMJlXEeydpc4YSVJolQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_9SE6EJlYEeydpc4YSVJolQ" entityName="AssemblyB">
+    <resourceContainer_AllocationContext href="simpleMitigation.resourceenvironment#_QxA0cZlYEeydpc4YSVJolQ"/>
+    <assemblyContext_AllocationContext href="simpleMitigation.system#_WQkC0JlXEeydpc4YSVJolQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_90TdYJlYEeydpc4YSVJolQ" entityName="AssemblyC">
+    <resourceContainer_AllocationContext href="simpleMitigation.resourceenvironment#_R_-h8ZlYEeydpc4YSVJolQ"/>
+    <assemblyContext_AllocationContext href="simpleMitigation.system#_YBjfUJlXEeydpc4YSVJolQ"/>
+  </allocationContexts_Allocation>
+</allocation:Allocation>

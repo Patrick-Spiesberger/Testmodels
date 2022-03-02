@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2" id="_8WS2AJlSEeydpc4YSVJolQ">
+  <components__Repository xsi:type="repository:BasicComponent" id="_JuY4gJlTEeydpc4YSVJolQ" entityName="BasicComponent1">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_Ev2FcZlUEeydpc4YSVJolQ" entityName="operationA" providedInterface__OperationProvidedRole="_fz9BcJlTEeydpc4YSVJolQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_QPZ5B5lUEeydpc4YSVJolQ" describedService__SEFF="_5QFdkJlTEeydpc4YSVJolQ"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_Nq6_gJlTEeydpc4YSVJolQ" entityName="BasicComponent2">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_IiZxEZlUEeydpc4YSVJolQ" entityName="operationB" providedInterface__OperationProvidedRole="_s-DEMJlTEeydpc4YSVJolQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_TYFhN5lUEeydpc4YSVJolQ" describedService__SEFF="_8WRycJlTEeydpc4YSVJolQ"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_PIbfUJlTEeydpc4YSVJolQ" entityName="BasicComponent3">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_KkQ7IZlUEeydpc4YSVJolQ" entityName="operationC" providedInterface__OperationProvidedRole="_tOQqcJlTEeydpc4YSVJolQ"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_VKONN5lUEeydpc4YSVJolQ" describedService__SEFF="_-DWYQJlTEeydpc4YSVJolQ"/>
+  </components__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_fz9BcJlTEeydpc4YSVJolQ" entityName="Interface1">
+    <signatures__OperationInterface id="_5QFdkJlTEeydpc4YSVJolQ" entityName="doA"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_s-DEMJlTEeydpc4YSVJolQ" entityName="Interface2">
+    <signatures__OperationInterface id="_8WRycJlTEeydpc4YSVJolQ" entityName="doB"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_tOQqcJlTEeydpc4YSVJolQ" entityName="Interface3">
+    <signatures__OperationInterface id="_-DWYQJlTEeydpc4YSVJolQ" entityName="doC"/>
+  </interfaces__Repository>
+</repository:Repository>

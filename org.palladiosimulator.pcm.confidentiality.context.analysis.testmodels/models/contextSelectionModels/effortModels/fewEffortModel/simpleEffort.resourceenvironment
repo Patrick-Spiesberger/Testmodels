@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resourceenvironment:ResourceEnvironment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:resourceenvironment="http://palladiosimulator.org/PalladioComponentModel/ResourceEnvironment/5.2" entityName="simpleEnvironment">
+  <linkingResources__ResourceEnvironment id="_Dpj2AJlYEeydpc4YSVJolQ" entityName="Internet" connectedResourceContainers_LinkingResource="_KSpC0ZlYEeydpc4YSVJolQ _QxA0cZlYEeydpc4YSVJolQ _R_-h8ZlYEeydpc4YSVJolQ"/>
+  <resourceContainer_ResourceEnvironment id="_KSpC0ZlYEeydpc4YSVJolQ" entityName="ComputerA"/>
+  <resourceContainer_ResourceEnvironment id="_QxA0cZlYEeydpc4YSVJolQ" entityName="ComputerB"/>
+  <resourceContainer_ResourceEnvironment id="_R_-h8ZlYEeydpc4YSVJolQ" entityName="ComputerC"/>
+</resourceenvironment:ResourceEnvironment>

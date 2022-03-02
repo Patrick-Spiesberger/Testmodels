@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:composition="http://palladiosimulator.org/PalladioComponentModel/Core/Composition/5.2" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:system="http://palladiosimulator.org/PalladioComponentModel/System/5.2" id="_rDGP4JlSEeydpc4YSVJolQ" entityName="simpleSystem">
+  <assemblyContexts__ComposedStructure id="_KqbtMJlXEeydpc4YSVJolQ" entityName="Component_A">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="simpleMitigation.repository#_JuY4gJlTEeydpc4YSVJolQ"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_WQkC0JlXEeydpc4YSVJolQ" entityName="Component_B">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="simpleMitigation.repository#_Nq6_gJlTEeydpc4YSVJolQ"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_YBjfUJlXEeydpc4YSVJolQ" entityName="Component_C">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="simpleMitigation.repository#_PIbfUJlTEeydpc4YSVJolQ"/>
+  </assemblyContexts__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_cYqphplXEeydpc4YSVJolQ" entityName="A_to_B" requiringAssemblyContext_AssemblyConnector="_KqbtMJlXEeydpc4YSVJolQ" providingAssemblyContext_AssemblyConnector="_WQkC0JlXEeydpc4YSVJolQ">
+    <providedRole_AssemblyConnector href="simpleMitigation.repository#_Ev2FcZlUEeydpc4YSVJolQ"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_mo141plXEeydpc4YSVJolQ" entityName="B_to_C" requiringAssemblyContext_AssemblyConnector="_WQkC0JlXEeydpc4YSVJolQ" providingAssemblyContext_AssemblyConnector="_YBjfUJlXEeydpc4YSVJolQ">
+    <providedRole_AssemblyConnector href="simpleMitigation.repository#_IiZxEZlUEeydpc4YSVJolQ"/>
+  </connectors__ComposedStructure>
+</system:System>
