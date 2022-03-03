@@ -25,11 +25,11 @@
             <Description>aName</Description>
             <Target/>
             <Condition>
-                <Apply FunctionId="urn:oasis:names:tc:xacml:3.0:function:any-of">
-                    <Description>neverGiven</Description>
+                <Apply FunctionId="urn:oasis:names:tc:xacml:3.0:function:all-of">
+                    <Description>aName</Description>
                     <Function FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal"/>
                     <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string"/>
-                    <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="_wbUl0pojEey1qKzy1Oo2GA" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
+                    <AttributeDesignator Category="urn:oasis:names:tc:xacml:1.0:subject" AttributeId="1" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"/>
                 </Apply>
             </Condition>
         </Rule>

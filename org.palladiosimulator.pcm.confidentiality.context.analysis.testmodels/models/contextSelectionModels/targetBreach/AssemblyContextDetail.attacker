@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<attacker:AssemblyContextDetail xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:attacker="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/" id="_lq0mcHbeEeyFlNaAbYNiaw" entityName="externalSupplier">
-  <compromisedComponents href="target.system#_SZFhcAo9EeyKMtWTxnyP1g"/>
-</attacker:AssemblyContextDetail>

@@ -30,7 +30,7 @@ class SimpleListEffortFifteenTest extends AbstractModelTest {
 	}
 
 	@Test
-	void testSimpleCaseSevenAttribute() {
+	void testSimpleCaseFifteenAttribute() {
 		final var steps = this.modification.getChangePropagationSteps();
 
 		assertEquals(1, steps.size());

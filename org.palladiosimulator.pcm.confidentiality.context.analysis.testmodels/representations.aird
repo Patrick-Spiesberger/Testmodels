@@ -84,29 +84,6 @@
     <semanticResources>models/compositeTravelPlanner/tests/07/01/test_model.attacker</semanticResources>
     <semanticResources>models/compositeTravelPlanner/tests/07/01/test_model.context</semanticResources>
     <semanticResources>models/compositeTravelPlanner/tests/07/01/test_model.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/contextSelectionModels/powerGrid/My.attacker</semanticResources>
-    <semanticResources>models/contextSelectionModels/powerGrid/powerGrid.resourceenvironment</semanticResources>
-    <semanticResources>models/contextSelectionModels/powerGrid/My.context</semanticResources>
-    <semanticResources>models/contextSelectionModels/powerGrid/powerGrid.system</semanticResources>
-    <semanticResources>models/contextSelectionModels/powerGrid/powerGrid.repository</semanticResources>
-    <semanticResources>models/contextSelectionModels/powerGrid/My.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/contextSelectionModels/powerGrid/powerGrid.allocation</semanticResources>
-    <semanticResources>models/contextSelectionModels/simpleAttackmodels/SimpleModelTest/My.attacker</semanticResources>
-    <semanticResources>models/contextSelectionModels/simpleAttackmodels/SimpleModelTest/My.context</semanticResources>
-    <semanticResources>models/contextSelectionModels/simpleAttackmodels/SimpleModelTest/newAssembly.system</semanticResources>
-    <semanticResources>models/contextSelectionModels/simpleAttackmodels/SimpleModelTest/newRepository.repository</semanticResources>
-    <semanticResources>models/contextSelectionModels/simpleAttackmodels/SimpleModelTest/newResourceEnvironment.resourceenvironment</semanticResources>
-    <semanticResources>models/contextSelectionModels/simpleAttackmodels/SimpleModelTest/My.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/contextSelectionModels/simpleAttackmodels/SimpleModelTest/newAllocation.allocation</semanticResources>
-    <semanticResources>models/contextSelectionModels/simpleAttackmodels/SimpleModelTest/newUsageModel.usagemodel</semanticResources>
-    <semanticResources>models/contextSelectionModels/targetBreach/AssemblyContextDetail.attacker</semanticResources>
-    <semanticResources>models/contextSelectionModels/targetBreach/target.system</semanticResources>
-    <semanticResources>models/contextSelectionModels/targetBreach/target.repository</semanticResources>
-    <semanticResources>models/contextSelectionModels/targetBreach/My.attacker</semanticResources>
-    <semanticResources>models/contextSelectionModels/targetBreach/target.allocation</semanticResources>
-    <semanticResources>models/contextSelectionModels/targetBreach/target.resourceenvironment</semanticResources>
-    <semanticResources>models/contextSelectionModels/targetBreach/target.context</semanticResources>
-    <semanticResources>models/contextSelectionModels/targetBreach/target.kamp4attackmodificationmarks</semanticResources>
     <semanticResources>models/simpleAttackmodels/PropagationUnitTests/newRepository.repository</semanticResources>
     <semanticResources>models/simpleAttackmodels/PropagationUnitTests/My.attacker</semanticResources>
     <semanticResources>models/simpleAttackmodels/PropagationUnitTests/My.context</semanticResources>
@@ -227,10 +204,6 @@
     <semanticResources>models/mitigationModels/simpleMitigationModel/01/My.attacker</semanticResources>
     <semanticResources>models/mitigationModels/simpleMitigationModel/01/My.context</semanticResources>
     <semanticResources>models/mitigationModels/simpleMitigationModel/simpleMitigation.resourceenvironment</semanticResources>
-    <semanticResources>models/contextSelectionModels/effortModels/fewEffortModel/simpleEffort.allocation</semanticResources>
-    <semanticResources>models/contextSelectionModels/effortModels/fewEffortModel/simpleEffort.resourceenvironment</semanticResources>
-    <semanticResources>models/contextSelectionModels/effortModels/fewEffortModel/simpleEffort.system</semanticResources>
-    <semanticResources>models/contextSelectionModels/effortModels/fewEffortModel/simpleEffort.repository</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/attacker/oneAttribute.attacker</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/simpleEffort.system</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/simpleEffort.repository</semanticResources>
@@ -239,15 +212,36 @@
     <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/simpleEffort.resourceenvironment</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/simpleEffort.usagemodel</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/simpleEffort.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/attacker/sevenAttribute.attacker</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/attacker/fifteenAttribute.attacker</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/attacker/twentyfiveAttribute.attacker</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/attacker/twentyAttribute.attacker</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/modificationmarks/fifteen.kamp4attackmodificationmarks</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/modificationmarks/one.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/modificationmarks/seven.kamp4attackmodificationmarks</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/modificationmarks/twenty.kamp4attackmodificationmarks</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/modificationmarks/twentyfive.kamp4attackmodificationmarks</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/attacker/fiveAttribute.attacker</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/attacker/tenAttribute.attacker</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/modificationmarks/five.kamp4attackmodificationmarks</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/simpleEffortModel/modificationmarks/ten.kamp4attackmodificationmarks</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/simpleEffort.system</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/simpleEffort.repository</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/simpleEffort.allocation</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/simpleEffort.resourceenvironment</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/simpleEffort.kamp4attackmodificationmarks</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/simpleEffort.usagemodel</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/modificationmarks/fifteen.kamp4attackmodificationmarks</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/modificationmarks/five.kamp4attackmodificationmarks</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/modificationmarks/one.kamp4attackmodificationmarks</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/modificationmarks/ten.kamp4attackmodificationmarks</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/modificationmarks/twenty.kamp4attackmodificationmarks</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/modificationmarks/twentyfive.kamp4attackmodificationmarks</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/effort.context</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/attacker/fifteenAttribute.attacker</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/attacker/fiveAttribute.attacker</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/attacker/oneAttribute.attacker</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/attacker/tenAttribute.attacker</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/attacker/twentyAttribute.attacker</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/attacker/twentyfiveAttribute.attacker</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_Br2OQJVJEeyMdeLhR9Q5bw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.palladiosimulator.editors.sirius.repository/description/repository.odesign#//@ownedViewpoints[name='Repository']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Bxva4JVJEeyMdeLhR9Q5bw" name="Repository Diagram" repPath="#_Bsix0JVJEeyMdeLhR9Q5bw" changeId="038b5686-b27d-4229-8fe5-8101150f02ca">
