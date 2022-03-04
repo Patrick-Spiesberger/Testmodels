@@ -1,38 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:composition="http://palladiosimulator.org/PalladioComponentModel/Core/Composition/5.2" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:system="http://palladiosimulator.org/PalladioComponentModel/System/5.2" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://palladiosimulator.org/PalladioComponentModel/Core/Composition/5.2 http://palladiosimulator.org/PalladioComponentModel/5.2#//core/composition http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://palladiosimulator.org/PalladioComponentModel/Repository/5.2 http://palladiosimulator.org/PalladioComponentModel/5.2#//repository http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2 http://palladiosimulator.org/PalladioComponentModel/5.2#//seff http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style http://palladiosimulator.org/PalladioComponentModel/System/5.2 http://palladiosimulator.org/PalladioComponentModel/5.2#//system">
   <viewpoint:DAnalysis uid="_qryhQDsaEeyt2-PmD4mwFw" selectedViews="_Br2OQJVJEeyMdeLhR9Q5bw _DRCqcJVJEeyMdeLhR9Q5bw" version="14.5.1.202106111100">
-    <semanticResources>models/compositeModels/powerGrid/My.attacker</semanticResources>
-    <semanticResources>models/compositeModels/powerGrid/powerGrid.resourceenvironment</semanticResources>
-    <semanticResources>models/compositeModels/powerGrid/My.context</semanticResources>
-    <semanticResources>models/compositeModels/powerGrid/powerGrid.system</semanticResources>
-    <semanticResources>models/compositeModels/powerGrid/powerGrid.repository</semanticResources>
-    <semanticResources>models/compositeModels/simpleAttackmodels/PropagationUnitTests/newRepository.repository</semanticResources>
     <semanticResources>pathmap://PCM_MODELS/PrimitiveTypes.repository</semanticResources>
-    <semanticResources>models/compositeModels/powerGrid/My.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/compositeModels/powerGrid/powerGrid.allocation</semanticResources>
-    <semanticResources>models/compositeModels/simpleAttackmodels/PropagationUnitTests/My.attacker</semanticResources>
-    <semanticResources>models/compositeModels/simpleAttackmodels/PropagationUnitTests/My.context</semanticResources>
-    <semanticResources>models/compositeModels/simpleAttackmodels/PropagationUnitTests/My.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/compositeModels/simpleAttackmodels/PropagationUnitTests/newAllocation.allocation</semanticResources>
-    <semanticResources>models/compositeModels/simpleAttackmodels/PropagationUnitTests/newResourceEnvironment.resourceenvironment</semanticResources>
-    <semanticResources>models/compositeModels/simpleAttackmodels/PropagationUnitTests/newAssembly.system</semanticResources>
-    <semanticResources>models/compositeModels/simpleAttackmodels/PropagationUnitTests/newUsageModel.usagemodel</semanticResources>
-    <semanticResources>models/compositeModels/simpleAttackmodels/SimpleModelTest/My.attacker</semanticResources>
-    <semanticResources>models/compositeModels/simpleAttackmodels/SimpleModelTest/My.context</semanticResources>
-    <semanticResources>models/compositeModels/simpleAttackmodels/SimpleModelTest/newAssembly.system</semanticResources>
-    <semanticResources>models/compositeModels/simpleAttackmodels/SimpleModelTest/newRepository.repository</semanticResources>
-    <semanticResources>models/compositeModels/simpleAttackmodels/SimpleModelTest/newResourceEnvironment.resourceenvironment</semanticResources>
-    <semanticResources>models/compositeModels/simpleAttackmodels/SimpleModelTest/My.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/compositeModels/simpleAttackmodels/SimpleModelTest/newAllocation.allocation</semanticResources>
-    <semanticResources>models/compositeModels/simpleAttackmodels/SimpleModelTest/newUsageModel.usagemodel</semanticResources>
-    <semanticResources>models/compositeModels/targetBreach/AssemblyContextDetail.attacker</semanticResources>
-    <semanticResources>models/compositeModels/targetBreach/target.system</semanticResources>
-    <semanticResources>models/compositeModels/targetBreach/target.repository</semanticResources>
-    <semanticResources>models/compositeModels/targetBreach/My.attacker</semanticResources>
-    <semanticResources>models/compositeModels/targetBreach/target.allocation</semanticResources>
-    <semanticResources>models/compositeModels/targetBreach/target.resourceenvironment</semanticResources>
-    <semanticResources>models/compositeModels/targetBreach/target.context</semanticResources>
-    <semanticResources>models/compositeModels/targetBreach/target.kamp4attackmodificationmarks</semanticResources>
     <semanticResources>models/compositeTravelPlanner/default.allocation</semanticResources>
     <semanticResources>models/compositeTravelPlanner/default.resourceenvironment</semanticResources>
     <semanticResources>pathmap://PCM_MODELS/Palladio.resourcetype</semanticResources>
@@ -236,12 +205,12 @@
     <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/modificationmarks/twenty.kamp4attackmodificationmarks</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/modificationmarks/twentyfive.kamp4attackmodificationmarks</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/effort.context</semanticResources>
-    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/attacker/fifteenAttribute.attacker</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/attacker/fiveAttribute.attacker</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/attacker/oneAttribute.attacker</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/attacker/tenAttribute.attacker</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/attacker/twentyAttribute.attacker</semanticResources>
     <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/attacker/twentyfiveAttribute.attacker</semanticResources>
+    <semanticResources>models/contextSelectionModels/effortModels/vulnerableEffortModel/attacker/fifteenAttribute.attacker</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_Br2OQJVJEeyMdeLhR9Q5bw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.palladiosimulator.editors.sirius.repository/description/repository.odesign#//@ownedViewpoints[name='Repository']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Bxva4JVJEeyMdeLhR9Q5bw" name="Repository Diagram" repPath="#_Bsix0JVJEeyMdeLhR9Q5bw" changeId="038b5686-b27d-4229-8fe5-8101150f02ca">

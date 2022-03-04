@@ -3,7 +3,7 @@ package edu.kit.ipd.sdq.kamp4attack.tests.mitigation.extension.effort;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 import edu.kit.ipd.sdq.kamp4attack.core.AttackPropagationAnalysis;
 import edu.kit.ipd.sdq.kamp4attack.model.modificationmarks.KAMP4attackModificationmarks.CredentialChange;
@@ -29,10 +29,9 @@ class VulnerableListEffortTwentyFiveTest extends AbstractModelTest {
 		(new AttackPropagationAnalysis()).runChangePropagationAnalysis(wrapper);
 	}
 
-	@Disabled
-	void testVulnerableCaseTwentyAttribute() {
+	@Test
+	void testVulnerableCaseTwentyFiveAttribute() {
 		final var steps = this.modification.getChangePropagationSteps();
-
 		assertEquals(1, steps.size());
 		assertEquals(2, ((CredentialChange) steps.get(0)).getCompromisedassembly().size());
 	}

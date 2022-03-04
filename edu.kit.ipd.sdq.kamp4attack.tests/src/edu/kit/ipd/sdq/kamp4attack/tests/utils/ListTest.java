@@ -8,6 +8,9 @@ import java.util.List;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.palladiosimulator.pcm.confidentiality.attackerSpecification.Attacker;
+import org.palladiosimulator.pcm.confidentiality.attackerSpecification.AttackerFactory;
+import org.palladiosimulator.pcm.confidentiality.attackerSpecification.ListOperationEffort;
 import org.palladiosimulator.pcm.confidentiality.context.system.SystemFactory;
 import org.palladiosimulator.pcm.confidentiality.context.system.UsageSpecification;
 
@@ -45,12 +48,14 @@ class ListTest {
 
 	@Test
 	void testGetTwentyComb() {
+		Attacker attacker = AttackerFactory.eINSTANCE.createAttacker();
+		attacker.setContextSelectionListEffort(ListOperationEffort.PART);
 		List<UsageSpecification> usages = createSpecification(20);
-		operation.calculateLists(usages, null); //20 nCr 20
-		operation.calculateLists(usages, null); //empty List
-		operation.calculateLists(usages, null); //20 nCr 19
-		operation.calculateLists(usages, null); //20 nCr 1
-		List<List<UsageSpecification>> result = operation.calculateLists(usages, null);
+		operation.calculateLists(usages, attacker); //20 nCr 20
+		operation.calculateLists(usages, attacker); //empty List
+		operation.calculateLists(usages, attacker); //20 nCr 19
+		operation.calculateLists(usages, attacker); //20 nCr 1
+		List<List<UsageSpecification>> result = operation.calculateLists(usages, attacker);
 		assertTrue(result.size() == 190); // 20 nCr 18
 	}
 
@@ -87,11 +92,13 @@ class ListTest {
 
 	@Test
 	void otherUsageSpecificationsBigInput() {
+		Attacker attacker = AttackerFactory.eINSTANCE.createAttacker();
+		attacker.setContextSelectionListEffort(ListOperationEffort.PART);
 		List<UsageSpecification> usages = createSpecification(50);
 		for (int i = 0; i < 10; i++) {
-			operation.calculateLists(usages, null);
+			operation.calculateLists(usages, attacker);
 		} // 50 nCr 4
-		assertEquals(2118760, operation.calculateLists(usages, null).size()); //50 nCr 45
+		assertEquals(2118760, operation.calculateLists(usages, attacker).size()); //50 nCr 45
 	}
 
 }
