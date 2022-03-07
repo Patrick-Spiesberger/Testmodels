@@ -7,9 +7,9 @@ import org.junit.jupiter.api.Test;
 public class CompositeEmptyAttackerTests extends CompositeTravelPlannerCaseStudy {
 
     public CompositeEmptyAttackerTests() {
-        this.PATH_ATTACKER = "compositeTravelPlanner/tests/01/test_model.attacker";
-        this.PATH_CONTEXT = "compositeTravelPlanner/tests/01/test_model.context";
-        this.PATH_MODIFICATION = "compositeTravelPlanner/tests/01/test_model.kamp4attackmodificationmarks";
+        this.PATH_ATTACKER = "mitigationModels/compositeTravelPlanner/tests/01/test_model.attacker";
+        this.PATH_CONTEXT = "mitigationModels/compositeTravelPlanner/tests/01/test_model.context";
+        this.PATH_MODIFICATION = "mitigationModels/compositeTravelPlanner/tests/01/test_model.kamp4attackmodificationmarks";
 
     }
 

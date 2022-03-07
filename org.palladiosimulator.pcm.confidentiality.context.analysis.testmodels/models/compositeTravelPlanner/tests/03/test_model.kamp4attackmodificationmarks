@@ -12,13 +12,6 @@
       <causingElements xsi:type="system:UsageSpecification" href="test_model.context#_cYY84fXpEeub3tcXgMY_nQ"/>
       <causingElements xsi:type="system:UsageSpecification" href="test_model.context#_2rnzoTmWEey9DpUgqaC4Ew"/>
     </compromisedresource>
-    <compromisedassembly>
-      <affectedElement xsi:type="composition:AssemblyContext" href="../../default.system#_2pBlYMN-EeWst9mTsticNA"/>
-    </compromisedassembly>
-    <compromisedassembly toolderived="true">
-      <affectedElement xsi:type="composition:AssemblyContext" href="../../default.system#_XOyEsMOBEeWst9mTsticNA"/>
-      <causingElements xsi:type="resourceenvironment:ResourceContainer" href="../../default.resourceenvironment#_Lq-ZYMN4EeWPE-QAhbUzuQ"/>
-    </compromisedassembly>
     <contextchange>
       <affectedElement xsi:type="system:UsageSpecification" href="test_model.context#_cYY84fXpEeub3tcXgMY_nQ"/>
     </contextchange>
@@ -223,5 +216,12 @@
         <method href="../../default.repository#_N6idsMN3EeWPE-QAhbUzuQ"/>
       </datamodelattacker>
     </datamodelcontainer>
+    <compromisedassembly>
+      <affectedElement xsi:type="attacker:AssemblyContextDetail" href="test_model.attacker#_yXE9cIAwEeyDlYeBnoYGxQ"/>
+    </compromisedassembly>
+    <compromisedassembly toolderived="true">
+      <affectedElement xsi:type="attacker:AssemblyContextDetail" href="test_model.attacker#_yXE9cIAwEeyDlYeBnoYGxQ"/>
+      <causingElements xsi:type="resourceenvironment:ResourceContainer" href="../../default.resourceenvironment#_Lq-ZYMN4EeWPE-QAhbUzuQ"/>
+    </compromisedassembly>
   </changePropagationSteps>
 </KAMP4attackModificationmarks:KAMP4attackModificationRepository>

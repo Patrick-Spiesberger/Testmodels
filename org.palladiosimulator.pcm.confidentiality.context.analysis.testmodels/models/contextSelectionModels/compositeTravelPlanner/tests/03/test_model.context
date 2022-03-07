@@ -25,6 +25,7 @@
     <usagespecification id="_Feug0TjBEey9mszNksodxw" entityName="AdminAgency" attributevalue="_-GM0EDjAEey9mszNksodxw" attribute="_fG18ovXoEeub3tcXgMY_nQ"/>
     <usagespecification id="_8bMY4TjCEeySeoNo6py9pw" entityName="AirlineAdmin" attributevalue="_z126wDjCEeySeoNo6py9pw" attribute="_fG18ovXoEeub3tcXgMY_nQ"/>
     <usagespecification id="_2rnzoTmWEey9DpUgqaC4Ew" entityName="User" attributevalue="_cvu-oDjAEey9mszNksodxw" attribute="_fG18ovXoEeub3tcXgMY_nQ"/>
+    <usagespecification xsi:type="usage:PCMUsageSpecification" id="_-ZP_4pv9Eeyk34c0irlOXw" attribute="_fh3cApv9Eeyk34c0irlOXw"/>
   </pcmspecificationcontainer>
   <policyset id="_SmfacfXoEeub3tcXgMY_nQ" entityName="Travelplaner Case Study">
     <policy id="_7wxKcfXoEeub3tcXgMY_nQ" entityName="Travelplanner">
@@ -215,6 +216,11 @@
         </target>
       </rule>
     </policy>
+    <policy id="_QMOuwZv9Eeyk34c0irlOXw">
+      <rule id="_SBTaAJv9Eeyk34c0irlOXw" entityName="TravelAgencyLogic">
+        <condition xsi:type="SimpleAttributeCondition" id="_SvkON5v9Eeyk34c0irlOXw" attribute="_8bMY4TjCEeySeoNo6py9pw"/>
+      </rule>
+    </policy>
   </policyset>
   <attributes>
     <attribute xsi:type="systemcontext:SimpleAttribute" id="_fG18ovXoEeub3tcXgMY_nQ" entityName="Role">
@@ -244,5 +250,6 @@
         <values>Home</values>
       </attributevalue>
     </attribute>
+    <attribute xsi:type="systemcontext:SimpleAttribute" id="_fh3cApv9Eeyk34c0irlOXw" entityName="TravelPlannerLogic"/>
   </attributes>
 </context:ConfidentialAccessSpecification>

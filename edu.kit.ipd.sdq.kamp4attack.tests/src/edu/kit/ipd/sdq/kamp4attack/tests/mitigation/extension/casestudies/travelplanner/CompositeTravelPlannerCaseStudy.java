@@ -54,7 +54,7 @@ public abstract class CompositeTravelPlannerCaseStudy extends AbstractChangeTest
 				.map(ResourceContainer::getEntityName).allMatch(this::resourceNameMatch);
 	}
 
-	protected boolean checkLining(CredentialChange change) {
+	protected boolean checkLinking(CredentialChange change) {
 		return change.getCompromisedlinkingresource().stream().map(CompromisedLinkingResource::getAffectedElement)
 				.map(LinkingResource::getEntityName).allMatch(this::linkingResourceNameMatch);
 	}

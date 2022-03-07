@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<attacker:AttackerSpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:attack="http://www.palladiosimulator.org/pcm/confidentiality/attacker/0.1/" xmlns:attacker="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/" xmlns:pcmIntegration="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/pcmIntagration/" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:structure="http://www.palladiosimulator.org/pcm/confidentiality/context/specification/pcm/structure/0.1/">
+<attacker:AttackerSpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:attack="http://www.palladiosimulator.org/pcm/confidentiality/attacker/0.1/" xmlns:attacker="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/" xmlns:pcmIntegration="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/pcmIntagration/" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2">
   <attackers>
-    <attacker id="_e5aL8Kd4EeuyobD7xRWqAQ" entityName="AttackerComponent2Resource" attacks="_y29cwDl2EeyxuvclpmtFmA" contextSelectionListEffort="None">
-      <compromisedComponentsDetails id="_zTbDoH-xEeysYdu_Jb7UPQ" entityName="travelPlanner">
-        <compromisedComponents href="../../../default.system#_wT59IG2pEeqDl7X_Gyem8w"/>
+    <attacker id="_e5aL8Kd4EeuyobD7xRWqAQ" entityName="AttackerComponent2ResourceNoPropagation" attacks="_y29cwDl2EeyxuvclpmtFmA">
+      <compromisedComponentsDetails id="_qtqtMH9NEeyqgNGZUQQwQw" entityName="agency">
+        <compromisedComponents href="../../default.system#_8q2rsG2pEeqDl7X_Gyem8w"/>
       </compromisedComponentsDetails>
-      <compromisedResources href="../../../default.resourceenvironment#_fuWBEMN4EeWPE-QAhbUzuQ"/>
+      <credentials href="test_model.context#_SllT8Z47Eeyp7JoifEwe_g"/>
     </attacker>
   </attackers>
   <attacks>
@@ -21,7 +21,7 @@
       <gainedAttributes href="test_model.context#_cYY84fXpEeub3tcXgMY_nQ"/>
     </vulnerability>
     <vulnerability xsi:type="attack:CWEVulnerability" id="_DE78MKg4EeuBy83MqQpiOw" entityName="Vulnerability TravelAgency" attackVector="Network" privileges="Low" takeOver="true" cweID="//@categoryspecification/@categories.1"/>
-    <vulnerability xsi:type="attack:CWEVulnerability" id="_oBdkwDl0EeyxuvclpmtFmA" entityName="Airline Resource Container" attackVector="Network" takeOver="true" cweID="//@categoryspecification/@categories.4"/>
+    <vulnerability xsi:type="attack:CWEVulnerability" id="_oBdkwDl0EeyxuvclpmtFmA" entityName="Airline Resource Container" attackVector="Local" takeOver="true" cweID="//@categoryspecification/@categories.4"/>
     <vulnerability xsi:type="attack:CWEVulnerability" id="_89t8QDl0EeyxuvclpmtFmA" entityName="LinkingResource Internet" attackVector="Network" cweID="//@categoryspecification/@categories.4"/>
   </vulnerabilites>
   <categoryspecification>
@@ -34,18 +34,29 @@
   <systemintegration>
     <vulnerabilities xsi:type="pcmIntegration:VulnerabilitySystemIntegration" id="_F_zfgDi_Eey9mszNksodxw" entityName="vulnerabilityTravelPlaner" vulnerability="_px3jQKd4EeuyobD7xRWqAQ">
       <pcmelement id="_Mz7nADl1EeyxuvclpmtFmA">
-        <assemblycontext href="../../../default.system#_wT59IG2pEeqDl7X_Gyem8w"/>
+        <assemblycontext href="../../default.system#_wT59IG2pEeqDl7X_Gyem8w"/>
       </pcmelement>
     </vulnerabilities>
     <vulnerabilities xsi:type="pcmIntegration:VulnerabilitySystemIntegration" id="_MIzmYDl1EeyxuvclpmtFmA" entityName="vulnerabilityAirlineServer" vulnerability="_oBdkwDl0EeyxuvclpmtFmA">
       <pcmelement id="_NnKawDl1EeyxuvclpmtFmA">
-        <resourcecontainer href="../../../default.resourceenvironment#_fuWBEMN4EeWPE-QAhbUzuQ"/>
+        <resourcecontainer href="../../default.resourceenvironment#_fuWBEMN4EeWPE-QAhbUzuQ"/>
       </pcmelement>
     </vulnerabilities>
     <vulnerabilities xsi:type="pcmIntegration:VulnerabilitySystemIntegration" id="_N9TC0Dl1EeyxuvclpmtFmA" entityName="vulnerabilityInternet" vulnerability="_89t8QDl0EeyxuvclpmtFmA">
       <pcmelement id="_OVv_EDl1EeyxuvclpmtFmA">
-        <linkingresource href="../../../default.resourceenvironment#_67lcMMN9EeWPE-QAhbUzuQ"/>
+        <linkingresource href="../../default.resourceenvironment#_67lcMMN9EeWPE-QAhbUzuQ"/>
       </pcmelement>
+    </vulnerabilities>
+    <vulnerabilities xsi:type="attacker:Mitigation" id="_7NYecJ46Eeyp7JoifEwe_g">
+      <mitigationspecification xsi:type="attacker:Encryption" id="_8W2A4Z46Eeyp7JoifEwe_g">
+        <necessaryCredentials href="test_model.context#_SllT8Z47Eeyp7JoifEwe_g"/>
+      </mitigationspecification>
+      <datamodelcontainer>
+        <datamodelattacker id="_dpbb4J47Eeyp7JoifEwe_g" referenceName="queryFlights">
+          <dataType xsi:type="repository:CollectionDataType" href="../../default.repository#_c0gL8GzqEeqas-IKudlqKw"/>
+          <method href="../../default.repository#_CaJXkGzrEeqas-IKudlqKw"/>
+        </datamodelattacker>
+      </datamodelcontainer>
     </vulnerabilities>
   </systemintegration>
 </attacker:AttackerSpecification>

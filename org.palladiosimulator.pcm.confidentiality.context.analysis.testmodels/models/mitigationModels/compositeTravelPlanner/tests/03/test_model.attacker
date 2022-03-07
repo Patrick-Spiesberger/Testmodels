@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<attacker:AttackerSpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:attack="http://www.palladiosimulator.org/pcm/confidentiality/attacker/0.1/" xmlns:attacker="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/" xmlns:pcmIntegration="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/pcmIntagration/">
+<attacker:AttackerSpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:attack="http://www.palladiosimulator.org/pcm/confidentiality/attacker/0.1/" xmlns:attacker="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/" xmlns:pcmIntegration="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/pcmIntagration/" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2">
   <attackers>
     <attacker id="_e5aL8Kd4EeuyobD7xRWqAQ" entityName="NoAttacksOnlyCredentials" contextSelectionListEffort="None">
       <compromisedComponentsDetails id="_yXE9cIAwEeyDlYeBnoYGxQ" entityName="travelPlanner">
@@ -39,8 +39,8 @@
       </pcmelement>
     </vulnerabilities>
     <vulnerabilities xsi:type="pcmIntegration:VulnerabilitySystemIntegration" id="_MIzmYDl1EeyxuvclpmtFmA" entityName="vulnerabilityAirlineServer" vulnerability="_oBdkwDl0EeyxuvclpmtFmA">
-      <pcmelement id="_NnKawDl1EeyxuvclpmtFmA">
-        <resourcecontainer href="../../default.resourceenvironment#_fuWBEMN4EeWPE-QAhbUzuQ"/>
+      <pcmelement id="_L5TWUJ2EEeyftrticflELw">
+        <assemblycontext href="../../default.repository#_AExvsG28EeqTytEGo1dJMQ"/>
       </pcmelement>
     </vulnerabilities>
     <vulnerabilities xsi:type="pcmIntegration:VulnerabilitySystemIntegration" id="_N9TC0Dl1EeyxuvclpmtFmA" entityName="vulnerabilityInternet" vulnerability="_89t8QDl0EeyxuvclpmtFmA">
@@ -48,10 +48,29 @@
         <linkingresource href="../../default.resourceenvironment#_67lcMMN9EeWPE-QAhbUzuQ"/>
       </pcmelement>
     </vulnerabilities>
+    <vulnerabilities xsi:type="attacker:Mitigation" id="_yfVJQJ12EeyftrticflELw">
+      <mitigationspecification xsi:type="attacker:Encryption" id="_zzITcZ12EeyftrticflELw">
+        <necessaryCredentials href="test_model.context#_-qED4ZvNEeySpfO2ARTgng"/>
+        <necessaryCredentials href="test_model.context#_8bMY4TjCEeySeoNo6py9pw"/>
+      </mitigationspecification>
+      <datamodelcontainer>
+        <datamodelattacker id="__0itQJ4uEeySXPXCdF8Tdg" referenceName="queryFlights">
+          <dataType xsi:type="repository:CollectionDataType" href="../../default.repository#_c0gL8GzqEeqas-IKudlqKw"/>
+          <method href="../../default.repository#_CaJXkGzrEeqas-IKudlqKw"/>
+        </datamodelattacker>
+        <datamodelattacker id="_ATFDYJ4vEeySXPXCdF8Tdg" referenceName="getDeclassifiedCCD">
+          <dataType xsi:type="repository:CompositeDataType" href="../../default.repository#_LkZ9IGzqEeqas-IKudlqKw"/>
+          <method href="../../default.repository#_O7U1oGzqEeqas-IKudlqKw"/>
+        </datamodelattacker>
+        <datamodelattacker id="_AjmLoJ4vEeySXPXCdF8Tdg" referenceName="bookComission">
+          <dataType xsi:type="repository:CompositeDataType" href="../../default.repository#_lM5aQGzqEeqas-IKudlqKw"/>
+          <method href="../../default.repository#_I0QUQGzrEeqas-IKudlqKw"/>
+        </datamodelattacker>
+        <datamodelattacker id="_Azzx4J4vEeySXPXCdF8Tdg" referenceName="bookFlight">
+          <dataType xsi:type="repository:CompositeDataType" href="../../default.repository#_jZTVsGzqEeqas-IKudlqKw"/>
+          <method href="../../default.repository#_ZSy_wGzqEeqas-IKudlqKw"/>
+        </datamodelattacker>
+      </datamodelcontainer>
+    </vulnerabilities>
   </systemintegration>
-  <mitigation id="_w-Ip8JvOEeySpfO2ARTgng" entityName="encryption">
-    <mitigationspecification xsi:type="attacker:Encryption" id="_y654oZvOEeySpfO2ARTgng">
-      <necessaryCredentials href="test_model.context#_-qED4ZvNEeySpfO2ARTgng"/>
-    </mitigationspecification>
-  </mitigation>
 </attacker:AttackerSpecification>

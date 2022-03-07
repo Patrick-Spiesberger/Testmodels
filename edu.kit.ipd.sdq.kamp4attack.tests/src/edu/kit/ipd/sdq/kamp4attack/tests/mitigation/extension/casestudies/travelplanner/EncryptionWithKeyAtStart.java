@@ -8,12 +8,12 @@ import java.util.Set;
 import org.junit.jupiter.api.Test;
 import org.palladiosimulator.pcm.confidentiality.context.system.pcm.structure.ServiceRestriction;
 
-public class CompositeVulnerability07Resource2ComponentTests extends CompositeTravelPlannerCaseStudy {
+public class EncryptionWithKeyAtStart extends CompositeTravelPlannerCaseStudy {
 
-	public CompositeVulnerability07Resource2ComponentTests() {
-		this.PATH_ATTACKER = "mitigationModels/compositeTravelPlanner/tests/04/07/test_model.attacker";
-		this.PATH_CONTEXT = "mitigationModels/compositeTravelPlanner/tests/04/07/test_model.context";
-		this.PATH_MODIFICATION = "mitigationModels/compositeTravelPlanner/tests/04/07/test_model.kamp4attackmodificationmarks";
+	public EncryptionWithKeyAtStart() {
+		this.PATH_ATTACKER = "mitigationModels/compositeTravelPlanner/tests/04/test_model.attacker";
+		this.PATH_CONTEXT = "mitigationModels/compositeTravelPlanner/tests/04/test_model.context";
+		this.PATH_MODIFICATION = "mitigationModels/compositeTravelPlanner/tests/04/test_model.kamp4attackmodificationmarks";
 	}
 
 	@Test
@@ -22,34 +22,27 @@ public class CompositeVulnerability07Resource2ComponentTests extends CompositeTr
 
 		var change = getCredentials();
 
-		assertEquals(3, change.getCompromisedassembly().size());
+		assertEquals(1, change.getCompromisedassembly().size());
 		assertEquals(0, change.getCompromisedlinkingresource().size());
-		assertEquals(1, change.getCompromisedresource().size());
+		assertEquals(0, change.getCompromisedresource().size());
 		assertEquals(4, change.getCompromisedservice().size());
-		assertEquals(0, change.getContextchange().size());
+		assertEquals(1, change.getContextchange().size());
+		assertEquals(5, change.getCompromiseddata().size()); //3 without hasKey attribute
 
 		assertTrue(checkAssembly(change));
-		assertTrue(checkResource(change));
 		assertTrue(checkServiceRestriction(change));
 
 	}
 
 	@Override
 	protected boolean assemblyNameMatch(String name) {
-		var set = Set.of("Assembly_TravelAgency", "Assembly_CommissionsDB", "Assembly_TravelAgencyLogic");
-		return set.contains(name);
-	}
-
-	@Override
-	protected boolean resourceNameMatch(String name) {
-		var set = Set.of("AgencyServer");
+		var set = Set.of("Assembly_TravelAgency");
 		return set.contains(name);
 	}
 
 	@Override
 	protected boolean checkServiceRestriction(ServiceRestriction servicerestriction1) {
-		var setAssembly = Set.of("Assembly_TravelPlanner", "Assembly_TravelAgency", "Assembly_CommissionsDB",
-				"Assembly_TravelAgencyLogic");
+		var setAssembly = Set.of("Assembly_TravelAgencyLogic", "Assembly_CommissionsDB");
 
 		var equalAssembly = setAssembly.contains(servicerestriction1.getAssemblycontext().getEntityName());
 		if (!equalAssembly) {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<attacker:AttackerSpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:attack="http://www.palladiosimulator.org/pcm/confidentiality/attacker/0.1/" xmlns:attacker="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/" xmlns:pcmIntegration="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/pcmIntagration/">
+<attacker:AttackerSpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:attack="http://www.palladiosimulator.org/pcm/confidentiality/attacker/0.1/" xmlns:attacker="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/" xmlns:pcmIntegration="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/pcmIntagration/" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2">
   <attackers>
     <attacker id="_e5aL8Kd4EeuyobD7xRWqAQ" entityName="EmptyAttacker" contextSelectionListEffort="None"/>
   </attackers>
@@ -27,7 +27,11 @@
     <categories xsi:type="attack:CWEID" entityName="Improper Access Control" cweID="284"/>
   </categoryspecification>
   <systemintegration>
-    <vulnerabilities xsi:type="pcmIntegration:VulnerabilitySystemIntegration" id="_F_zfgDi_Eey9mszNksodxw" entityName="vulnerabilityTravelPlaner" vulnerability="_px3jQKd4EeuyobD7xRWqAQ"/>
+    <vulnerabilities xsi:type="pcmIntegration:VulnerabilitySystemIntegration" id="_F_zfgDi_Eey9mszNksodxw" entityName="vulnerabilityTravelPlaner" vulnerability="_px3jQKd4EeuyobD7xRWqAQ">
+      <pcmelement id="_Mz7nADl1EeyxuvclpmtFmA">
+        <assemblycontext href="../../default.system#_wT59IG2pEeqDl7X_Gyem8w"/>
+      </pcmelement>
+    </vulnerabilities>
     <vulnerabilities xsi:type="pcmIntegration:VulnerabilitySystemIntegration" id="_MIzmYDl1EeyxuvclpmtFmA" entityName="vulnerabilityAirlineServer" vulnerability="_oBdkwDl0EeyxuvclpmtFmA">
       <pcmelement id="_NnKawDl1EeyxuvclpmtFmA">
         <resourcecontainer href="../../default.resourceenvironment#_fuWBEMN4EeWPE-QAhbUzuQ"/>
@@ -38,13 +42,17 @@
         <linkingresource href="../../default.resourceenvironment#_67lcMMN9EeWPE-QAhbUzuQ"/>
       </pcmelement>
     </vulnerabilities>
+    <vulnerabilities xsi:type="attacker:Mitigation" id="_q3QUoJ4mEeyfEMnSwyuYuw">
+      <mitigationspecification xsi:type="attacker:Encryption" id="_EQ1MAZ4nEeySXPXCdF8Tdg">
+        <necessaryCredentials href="test_model.context#_cYY84fXpEeub3tcXgMY_nQ"/>
+      </mitigationspecification>
+      <datamodelcontainer>
+        <datamodelattacker id="__9pfkJ4mEeySXPXCdF8Tdg" referenceName="test">
+          <dataType xsi:type="repository:CollectionDataType" href="../../default.repository#_c0gL8GzqEeqas-IKudlqKw"/>
+          <source href="../../default.repository#_ps7jMG0nEeqy5fNd4LSp3w"/>
+          <method href="../../default.repository#_CaJXkGzrEeqas-IKudlqKw"/>
+        </datamodelattacker>
+      </datamodelcontainer>
+    </vulnerabilities>
   </systemintegration>
-  <mitigation id="_5zaQQJvIEeySpfO2ARTgng">
-    <pcmelement id="_Mz7nADl1EeyxuvclpmtFmA">
-      <assemblycontext href="../../default.system#_wT59IG2pEeqDl7X_Gyem8w"/>
-    </pcmelement>
-    <mitigationspecification xsi:type="pcmIntegration:Prevention" id="_A0u98pvJEeySpfO2ARTgng">
-      <necessaryCredentials href="test_model.context#_KTA2QZvJEeySpfO2ARTgng"/>
-    </mitigationspecification>
-  </mitigation>
 </attacker:AttackerSpecification>

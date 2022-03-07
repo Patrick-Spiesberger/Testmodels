@@ -34,10 +34,10 @@
   <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_kxiQsG2qEeqDl7X_Gyem8w" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_jPZIgG2qEeqDl7X_Gyem8w" assemblyContext_ProvidedDelegationConnector="_8q2rsG2pEeqDl7X_Gyem8w">
     <innerProvidedRole_ProvidedDelegationConnector href="default.repository#_Zh4Q4G0nEeqy5fNd4LSp3w"/>
   </connectors__ComposedStructure>
-  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_k6fGgHHKEeqQIp35a0U06Q" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_QMAFQHHKEeqQIp35a0U06Q" assemblyContext_ProvidedDelegationConnector="_6yrCEG2pEeqDl7X_Gyem8w">
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_k6fGgHHKEeqQIp35a0U06Q" entityName="Airline_IFlightsDB" outerProvidedRole_ProvidedDelegationConnector="_QMAFQHHKEeqQIp35a0U06Q" assemblyContext_ProvidedDelegationConnector="_6yrCEG2pEeqDl7X_Gyem8w">
     <innerProvidedRole_ProvidedDelegationConnector href="default.repository#_fqAEUHHKEeqQIp35a0U06Q"/>
   </connectors__ComposedStructure>
-  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_luv1AHHKEeqQIp35a0U06Q" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_RlpYwHHKEeqQIp35a0U06Q" assemblyContext_ProvidedDelegationConnector="_18D4cG2pEeqDl7X_Gyem8w">
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_luv1AHHKEeqQIp35a0U06Q" entityName="CreditCardCenter_CreditCardCenterDB" outerProvidedRole_ProvidedDelegationConnector="_RlpYwHHKEeqQIp35a0U06Q" assemblyContext_ProvidedDelegationConnector="_18D4cG2pEeqDl7X_Gyem8w">
     <innerProvidedRole_ProvidedDelegationConnector href="default.repository#_VtYDIHHKEeqQIp35a0U06Q"/>
   </connectors__ComposedStructure>
   <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_x9r3cG0yEeqbLPEsWsJpeg" entityName="ITravelPlannerProvidedRole">

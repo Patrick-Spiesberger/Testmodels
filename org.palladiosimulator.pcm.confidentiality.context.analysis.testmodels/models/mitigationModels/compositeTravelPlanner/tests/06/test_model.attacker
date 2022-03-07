@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <attacker:AttackerSpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:attack="http://www.palladiosimulator.org/pcm/confidentiality/attacker/0.1/" xmlns:attacker="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/" xmlns:pcmIntegration="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/pcmIntagration/" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:structure="http://www.palladiosimulator.org/pcm/confidentiality/context/specification/pcm/structure/0.1/">
   <attackers>
-    <attacker id="_e5aL8Kd4EeuyobD7xRWqAQ" entityName="AttackerLinking2Component" attacks="_ynkV4Dl2EeyxuvclpmtFmA" contextSelectionListEffort="None">
-      <compromisedComponentsDetails id="_KeBJEInFEeyjm-oA3QFOTA" entityName="travelPlanner">
-        <compromisedComponents href="../../../default.system#_wT59IG2pEeqDl7X_Gyem8w"/>
+    <attacker id="_e5aL8Kd4EeuyobD7xRWqAQ" entityName="AttackerComponent2LocalResource" attacks="_y29cwDl2EeyxuvclpmtFmA">
+      <compromisedComponentsDetails id="_5CsO8IAyEeyDlYeBnoYGxQ" entityName="Assembly_Airline_Start">
+        <compromisedComponents href="../../default.system#_6yrCEG2pEeqDl7X_Gyem8w"/>
       </compromisedComponentsDetails>
-      <compromisedLinkingResources href="../../../default.resourceenvironment#_1XdFQMN9EeWPE-QAhbUzuQ"/>
     </attacker>
   </attackers>
   <attacks>
@@ -21,7 +20,7 @@
       <gainedAttributes href="test_model.context#_cYY84fXpEeub3tcXgMY_nQ"/>
     </vulnerability>
     <vulnerability xsi:type="attack:CWEVulnerability" id="_DE78MKg4EeuBy83MqQpiOw" entityName="Vulnerability TravelAgency" attackVector="Network" privileges="Low" takeOver="true" cweID="//@categoryspecification/@categories.1"/>
-    <vulnerability xsi:type="attack:CWEVulnerability" id="_oBdkwDl0EeyxuvclpmtFmA" entityName="Airline Resource Container" attackVector="Network" takeOver="true" cweID="//@categoryspecification/@categories.4"/>
+    <vulnerability xsi:type="attack:CWEVulnerability" id="_oBdkwDl0EeyxuvclpmtFmA" entityName="Airline Resource Container" attackVector="Local" takeOver="true" cweID="//@categoryspecification/@categories.4"/>
     <vulnerability xsi:type="attack:CWEVulnerability" id="_89t8QDl0EeyxuvclpmtFmA" entityName="LinkingResource Internet" attackVector="Network" cweID="//@categoryspecification/@categories.4"/>
   </vulnerabilites>
   <categoryspecification>
@@ -34,17 +33,17 @@
   <systemintegration>
     <vulnerabilities xsi:type="pcmIntegration:VulnerabilitySystemIntegration" id="_F_zfgDi_Eey9mszNksodxw" entityName="vulnerabilityTravelPlaner" vulnerability="_px3jQKd4EeuyobD7xRWqAQ">
       <pcmelement id="_Mz7nADl1EeyxuvclpmtFmA">
-        <assemblycontext href="../../../default.system#_wT59IG2pEeqDl7X_Gyem8w"/>
+        <assemblycontext href="../../default.system#_wT59IG2pEeqDl7X_Gyem8w"/>
       </pcmelement>
     </vulnerabilities>
     <vulnerabilities xsi:type="pcmIntegration:VulnerabilitySystemIntegration" id="_MIzmYDl1EeyxuvclpmtFmA" entityName="vulnerabilityAirlineServer" vulnerability="_oBdkwDl0EeyxuvclpmtFmA">
       <pcmelement id="_NnKawDl1EeyxuvclpmtFmA">
-        <resourcecontainer href="../../../default.resourceenvironment#_fuWBEMN4EeWPE-QAhbUzuQ"/>
+        <resourcecontainer href="../../default.resourceenvironment#_fuWBEMN4EeWPE-QAhbUzuQ"/>
       </pcmelement>
     </vulnerabilities>
     <vulnerabilities xsi:type="pcmIntegration:VulnerabilitySystemIntegration" id="_N9TC0Dl1EeyxuvclpmtFmA" entityName="vulnerabilityInternet" vulnerability="_89t8QDl0EeyxuvclpmtFmA">
       <pcmelement id="_OVv_EDl1EeyxuvclpmtFmA">
-        <linkingresource href="../../../default.resourceenvironment#_67lcMMN9EeWPE-QAhbUzuQ"/>
+        <linkingresource href="../../default.resourceenvironment#_67lcMMN9EeWPE-QAhbUzuQ"/>
       </pcmelement>
     </vulnerabilities>
   </systemintegration>
