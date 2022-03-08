@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <attacker:AttackerSpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:attack="http://www.palladiosimulator.org/pcm/confidentiality/attacker/0.1/" xmlns:attacker="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/" xmlns:pcmIntegration="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/pcmIntagration/">
   <attackers>
-    <attacker id="_e5aL8Kd4EeuyobD7xRWqAQ" entityName="AttackSeffNoPropagation" attacks="_GA4T8Dl3EeyxuvclpmtFmA">
+    <attacker id="_e5aL8Kd4EeuyobD7xRWqAQ" entityName="AttackCompletePropagation" attacks="_GA4T8Dl3EeyxuvclpmtFmA">
       <compromisedComponentsDetails id="_Tn9XcH-xEeysYdu_Jb7UPQ" entityName="travelPlanner">
         <compromisedComponents href="../../default.system#_wT59IG2pEeqDl7X_Gyem8w"/>
       </compromisedComponentsDetails>
@@ -45,6 +45,24 @@
       <pcmelement id="_OVv_EDl1EeyxuvclpmtFmA">
         <linkingresource href="../../default.resourceenvironment#_67lcMMN9EeWPE-QAhbUzuQ"/>
       </pcmelement>
+    </vulnerabilities>
+    <vulnerabilities xsi:type="attacker:Mitigation" id="_brXoMJ5FEeyp7JoifEwe_g">
+      <pcmelement id="_dprH8J5FEeyp7JoifEwe_g">
+        <assemblycontext href="../../default.repository#_AExvsG28EeqTytEGo1dJMQ"/>
+      </pcmelement>
+      <mitigationspecification xsi:type="pcmIntegration:Prevention" id="_b6JEAp5FEeyp7JoifEwe_g"/>
+    </vulnerabilities>
+    <vulnerabilities xsi:type="attacker:Mitigation" id="_fWWFIJ5FEeyp7JoifEwe_g">
+      <pcmelement id="_hGB6EJ5FEeyp7JoifEwe_g">
+        <assemblycontext href="../../default.system#_8q2rsG2pEeqDl7X_Gyem8w"/>
+      </pcmelement>
+      <mitigationspecification xsi:type="pcmIntegration:Prevention" id="_gR8xwp5FEeyp7JoifEwe_g"/>
+    </vulnerabilities>
+    <vulnerabilities xsi:type="attacker:Mitigation" id="_osSg0J5FEeyp7JoifEwe_g">
+      <pcmelement id="_p1vcMJ5FEeyp7JoifEwe_g">
+        <assemblycontext href="../../default.repository#_o_iRsG0nEeqy5fNd4LSp3w"/>
+      </pcmelement>
+      <mitigationspecification xsi:type="pcmIntegration:Prevention" id="_o9KOYp5FEeyp7JoifEwe_g"/>
     </vulnerabilities>
   </systemintegration>
 </attacker:AttackerSpecification>

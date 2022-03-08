@@ -31,20 +31,20 @@
     <categories xsi:type="attack:CWEID" entityName="Cleartext Storage of Sensitive Information" cweID="312"/>
     <categories xsi:type="attack:CWEID" entityName="Improper Access Control" cweID="284"/>
   </categoryspecification>
-<systemintegration>
+  <systemintegration>
     <vulnerabilities xsi:type="pcmIntegration:VulnerabilitySystemIntegration" id="_F_zfgDi_Eey9mszNksodxw" entityName="vulnerabilityTravelPlaner" vulnerability="_px3jQKd4EeuyobD7xRWqAQ">
       <pcmelement id="_Mz7nADl1EeyxuvclpmtFmA">
-        <assemblycontext href="../../default.system#_wT59IG2pEeqDl7X_Gyem8w"/>
+        <assemblycontext href="../../../default.system#_wT59IG2pEeqDl7X_Gyem8w"/>
       </pcmelement>
     </vulnerabilities>
     <vulnerabilities xsi:type="pcmIntegration:VulnerabilitySystemIntegration" id="_MIzmYDl1EeyxuvclpmtFmA" entityName="vulnerabilityAirlineServer" vulnerability="_oBdkwDl0EeyxuvclpmtFmA">
       <pcmelement id="_NnKawDl1EeyxuvclpmtFmA">
-        <resourcecontainer href="../../default.resourceenvironment#_fuWBEMN4EeWPE-QAhbUzuQ"/>
+        <resourcecontainer href="../../../default.resourceenvironment#_fuWBEMN4EeWPE-QAhbUzuQ"/>
       </pcmelement>
     </vulnerabilities>
     <vulnerabilities xsi:type="pcmIntegration:VulnerabilitySystemIntegration" id="_N9TC0Dl1EeyxuvclpmtFmA" entityName="vulnerabilityInternet" vulnerability="_89t8QDl0EeyxuvclpmtFmA">
       <pcmelement id="_OVv_EDl1EeyxuvclpmtFmA">
-        <linkingresource href="../../default.resourceenvironment#_67lcMMN9EeWPE-QAhbUzuQ"/>
+        <linkingresource href="../../../default.resourceenvironment#_67lcMMN9EeWPE-QAhbUzuQ"/>
       </pcmelement>
     </vulnerabilities>
   </systemintegration>

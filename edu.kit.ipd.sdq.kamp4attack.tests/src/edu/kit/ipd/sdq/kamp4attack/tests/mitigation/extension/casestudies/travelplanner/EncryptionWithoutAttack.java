@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-public class EncryptionWithoutAttack extends CompositeTravelPlannerCaseStudy {
+public class EncryptionWithoutAttack extends MitigationTravelPlanner {
 
     public EncryptionWithoutAttack() {
         this.PATH_ATTACKER = "mitigationModels/compositeTravelPlanner/tests/02/test_model.attacker";
@@ -19,7 +19,7 @@ public class EncryptionWithoutAttack extends CompositeTravelPlannerCaseStudy {
         var change = getCredentials();
 
         assertEquals(1, change.getCompromisedassembly().size());
-        assertEquals(2, change.getCompromiseddata().size());
+        assertEquals(2, change.getCompromiseddata().size()); //6 without mitigation
     }
 
 

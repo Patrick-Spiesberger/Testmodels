@@ -163,18 +163,6 @@
     <semanticResources>models/compositeTravelPlanner/tests/04/08/test_model.attacker</semanticResources>
     <semanticResources>models/compositeTravelPlanner/tests/04/08/test_model.context</semanticResources>
     <semanticResources>models/compositeTravelPlanner/tests/04/08/test_model.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/compositeTravelPlanner/tests/05/01/test_model.attacker</semanticResources>
-    <semanticResources>models/compositeTravelPlanner/tests/05/01/test_model.context</semanticResources>
-    <semanticResources>models/compositeTravelPlanner/tests/05/01/test_model.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/compositeTravelPlanner/tests/06/01/test_model.attacker</semanticResources>
-    <semanticResources>models/compositeTravelPlanner/tests/06/01/test_model.context</semanticResources>
-    <semanticResources>models/compositeTravelPlanner/tests/06/01/test_model.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/compositeTravelPlanner/tests/06/02/test_model.attacker</semanticResources>
-    <semanticResources>models/compositeTravelPlanner/tests/06/02/test_model.context</semanticResources>
-    <semanticResources>models/compositeTravelPlanner/tests/06/02/test_model.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/compositeTravelPlanner/tests/07/01/test_model.attacker</semanticResources>
-    <semanticResources>models/compositeTravelPlanner/tests/07/01/test_model.context</semanticResources>
-    <semanticResources>models/compositeTravelPlanner/tests/07/01/test_model.kamp4attackmodificationmarks</semanticResources>
     <semanticResources>models/mitigationModels/compositeTravelPlanner/default.allocation</semanticResources>
     <semanticResources>models/mitigationModels/compositeTravelPlanner/default.resourceenvironment</semanticResources>
     <semanticResources>models/mitigationModels/compositeTravelPlanner/default.repository</semanticResources>
@@ -225,56 +213,15 @@
     <semanticResources>models/mitigationModels/compositeTravelPlanner/tests/07/01/test_model.attacker</semanticResources>
     <semanticResources>models/mitigationModels/compositeTravelPlanner/tests/07/01/test_model.context</semanticResources>
     <semanticResources>models/mitigationModels/compositeTravelPlanner/tests/07/01/test_model.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/default.allocation</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/default.resourceenvironment</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/default.system</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/default.repository</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/default.usagemodel</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/01/test_model.attacker</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/01/test_model.context</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/01/test_model.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/02/test_model.attacker</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/02/test_model.context</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/02/test_model.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/03/test_model.attacker</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/03/test_model.context</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/03/test_model.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/01/test_model.attacker</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/01/test_model.context</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/01/test_model.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/02/test_model.attacker</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/02/test_model.context</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/02/test_model.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/03/test_model.attacker</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/03/test_model.context</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/03/test_model.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/04/test_model.attacker</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/04/test_model.context</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/04/test_model.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/05/test_model.attacker</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/05/test_model.context</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/05/test_model.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/06/test_model.attacker</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/06/test_model.context</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/06/test_model.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/07/test_model.attacker</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/07/test_model.context</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/07/test_model.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/08/test_model.attacker</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/08/test_model.context</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/04/08/test_model.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/05/01/test_model.attacker</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/05/01/test_model.context</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/05/01/test_model.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/06/01/test_model.attacker</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/06/01/test_model.context</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/06/01/test_model.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/06/02/test_model.attacker</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/06/02/test_model.context</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/06/02/test_model.kamp4attackmodificationmarks</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/07/01/test_model.attacker</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/07/01/test_model.context</semanticResources>
-    <semanticResources>models/contextSelectionModels/compositeTravelPlanner/tests/07/01/test_model.kamp4attackmodificationmarks</semanticResources>
+    <semanticResources>models/compositeTravelPlanner/tests/05/test_model.attacker</semanticResources>
+    <semanticResources>models/compositeTravelPlanner/tests/05/test_model.context</semanticResources>
+    <semanticResources>models/compositeTravelPlanner/tests/05/test_model.kamp4attackmodificationmarks</semanticResources>
+    <semanticResources>models/compositeTravelPlanner/tests/06/test_model.attacker</semanticResources>
+    <semanticResources>models/compositeTravelPlanner/tests/06/test_model.context</semanticResources>
+    <semanticResources>models/compositeTravelPlanner/tests/06/test_model.kamp4attackmodificationmarks</semanticResources>
+    <semanticResources>models/compositeTravelPlanner/tests/07/test_model.attacker</semanticResources>
+    <semanticResources>models/compositeTravelPlanner/tests/07/test_model.context</semanticResources>
+    <semanticResources>models/compositeTravelPlanner/tests/07/test_model.kamp4attackmodificationmarks</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_Br2OQJVJEeyMdeLhR9Q5bw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.palladiosimulator.editors.sirius.repository/description/repository.odesign#//@ownedViewpoints[name='Repository']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Bxva4JVJEeyMdeLhR9Q5bw" name="Repository Diagram" repPath="#_Bsix0JVJEeyMdeLhR9Q5bw" changeId="038b5686-b27d-4229-8fe5-8101150f02ca">

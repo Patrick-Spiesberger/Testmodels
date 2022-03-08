@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<attacker:AttackerSpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:attack="http://www.palladiosimulator.org/pcm/confidentiality/attacker/0.1/" xmlns:attacker="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/" xmlns:pcmIntegration="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/pcmIntagration/" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:structure="http://www.palladiosimulator.org/pcm/confidentiality/context/specification/pcm/structure/0.1/">
+<attacker:AttackerSpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:attack="http://www.palladiosimulator.org/pcm/confidentiality/attacker/0.1/" xmlns:attacker="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/" xmlns:pcmIntegration="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/pcmIntagration/" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2">
   <attackers>
     <attacker id="_e5aL8Kd4EeuyobD7xRWqAQ" entityName="AttackerComponent2LocalResource" attacks="_y29cwDl2EeyxuvclpmtFmA">
       <compromisedComponentsDetails id="_5CsO8IAyEeyDlYeBnoYGxQ" entityName="Assembly_Airline_Start">
@@ -45,6 +45,30 @@
       <pcmelement id="_OVv_EDl1EeyxuvclpmtFmA">
         <linkingresource href="../../default.resourceenvironment#_67lcMMN9EeWPE-QAhbUzuQ"/>
       </pcmelement>
+    </vulnerabilities>
+    <vulnerabilities xsi:type="attacker:Mitigation" id="_QAaSYJ5EEeyp7JoifEwe_g"/>
+    <vulnerabilities xsi:type="attacker:Mitigation" id="_ZMe7EJ1tEeyftrticflELw">
+      <mitigationspecification xsi:type="attacker:Encryption" id="_BChpwZ1zEeyftrticflELw">
+        <necessaryCredentials href="test_model.context#_BFOUMZvNEeySpfO2ARTgng"/>
+      </mitigationspecification>
+      <datamodelcontainer>
+        <datamodelattacker id="_dPA5IJ4tEeySXPXCdF8Tdg" referenceName="getDeclassifiedCCD">
+          <dataType xsi:type="repository:CompositeDataType" href="../../default.repository#_LkZ9IGzqEeqas-IKudlqKw"/>
+          <method href="../../default.repository#_O7U1oGzqEeqas-IKudlqKw"/>
+        </datamodelattacker>
+        <datamodelattacker id="_dp8hoJ4tEeySXPXCdF8Tdg" referenceName="setCCD">
+          <dataType xsi:type="repository:CompositeDataType" href="../../default.repository#_lM5aQGzqEeqas-IKudlqKw"/>
+          <method href="../../default.repository#_KITLgGzqEeqas-IKudlqKw"/>
+        </datamodelattacker>
+        <datamodelattacker id="_eA8FUJ4tEeySXPXCdF8Tdg" referenceName="queryFlights">
+          <dataType xsi:type="repository:CollectionDataType" href="../../default.repository#_c0gL8GzqEeqas-IKudlqKw"/>
+          <method href="../../default.repository#_CaJXkGzrEeqas-IKudlqKw"/>
+        </datamodelattacker>
+        <datamodelattacker id="_eS-3kJ4tEeySXPXCdF8Tdg" referenceName="bookFlights">
+          <dataType xsi:type="repository:CollectionDataType" href="../../default.repository#_c0gL8GzqEeqas-IKudlqKw"/>
+          <method href="../../default.repository#_ZSy_wGzqEeqas-IKudlqKw"/>
+        </datamodelattacker>
+      </datamodelcontainer>
     </vulnerabilities>
   </systemintegration>
 </attacker:AttackerSpecification>

@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import org.junit.jupiter.api.Test;
 import org.palladiosimulator.pcm.confidentiality.context.system.UsageSpecification;
@@ -24,6 +25,12 @@ public class CompositeCredentialsPropagationTests extends CompositeTravelPlanner
 		var change = getCredentials();
 
 		assertEquals(5, change.getCompromisedassembly().size());
+
+		System.out
+				.println(change
+						.getCompromisedassembly().stream().map(e -> e.getAffectedElement().getCompromisedComponents()
+								.stream().map(f -> f.getEntityName()).collect(Collectors.toList()))
+						.collect(Collectors.toList()));
 		assertEquals(0, change.getCompromisedlinkingresource().size());
 		assertEquals(1, change.getCompromisedresource().size());
 		assertEquals(6, change.getCompromisedservice().size());

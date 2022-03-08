@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<attacker:AttackerSpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:attack="http://www.palladiosimulator.org/pcm/confidentiality/attacker/0.1/" xmlns:attacker="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/" xmlns:pcmIntegration="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/pcmIntagration/" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2">
+<attacker:AttackerSpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:attack="http://www.palladiosimulator.org/pcm/confidentiality/attacker/0.1/" xmlns:attacker="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/" xmlns:pcmIntegration="http://www.palladiosimulator.org/pcm/confidentiality/attack/0.1/pcmIntagration/" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:structure="http://www.palladiosimulator.org/pcm/confidentiality/context/specification/pcm/structure/0.1/">
   <attackers>
-    <attacker id="_e5aL8Kd4EeuyobD7xRWqAQ" entityName="AttackerComponent2ResourceNoPropagation" attacks="_y29cwDl2EeyxuvclpmtFmA">
-      <compromisedComponentsDetails id="_qtqtMH9NEeyqgNGZUQQwQw" entityName="agency">
-        <compromisedComponents href="../../default.system#_wT59IG2pEeqDl7X_Gyem8w"/>
-      </compromisedComponentsDetails>
+    <attacker id="_e5aL8Kd4EeuyobD7xRWqAQ" entityName="AttackerResource2LinkingOnlyGain" attacks="_y29cwDl2EeyxuvclpmtFmA" contextSelectionListEffort="None">
+      <compromisedResources href="../../default.resourceenvironment#_HM_VsMN5EeWPE-QAhbUzuQ"/>
     </attacker>
   </attackers>
   <attacks>
@@ -15,15 +13,15 @@
     <attack xsi:type="attack:CWEAttack" id="_GA4T8Dl3EeyxuvclpmtFmA" entityName="Improper Neutralization of Special Elements used in a Command" category="//@categoryspecification/@categories.1"/>
   </attacks>
   <vulnerabilites>
-    <vulnerability xsi:type="attack:CWEVulnerability" id="_px3jQKd4EeuyobD7xRWqAQ" entityName="Vulnerability Travelplanner" attackVector="AdjacentNetwork" confidentialityImpact="High" takeOver="true" cweID="//@categoryspecification/@categories.0">
-      <gainedAttributes href="test_model.context#_r5PIgZ5GEeyp7JoifEwe_g"/>
-    </vulnerability>
+    <vulnerability xsi:type="attack:CWEVulnerability" id="_px3jQKd4EeuyobD7xRWqAQ" entityName="Vulnerability Travelplanner" attackVector="AdjacentNetwork" confidentialityImpact="High" takeOver="true" cweID="//@categoryspecification/@categories.0"/>
     <vulnerability xsi:type="attack:CWEVulnerability" id="_6TslgKg2Eeu41LgoiPSZgg" entityName="Smartphone" attackVector="Local" confidentialityImpact="High" cweID="//@categoryspecification/@categories.3">
       <gainedAttributes href="test_model.context#_cYY84fXpEeub3tcXgMY_nQ"/>
     </vulnerability>
     <vulnerability xsi:type="attack:CWEVulnerability" id="_DE78MKg4EeuBy83MqQpiOw" entityName="Vulnerability TravelAgency" attackVector="Network" privileges="Low" takeOver="true" cweID="//@categoryspecification/@categories.1"/>
-    <vulnerability xsi:type="attack:CWEVulnerability" id="_oBdkwDl0EeyxuvclpmtFmA" entityName="Airline Resource Container" attackVector="Local" takeOver="true" cweID="//@categoryspecification/@categories.4"/>
-    <vulnerability xsi:type="attack:CWEVulnerability" id="_89t8QDl0EeyxuvclpmtFmA" entityName="LinkingResource Internet" attackVector="Network" cweID="//@categoryspecification/@categories.4"/>
+    <vulnerability xsi:type="attack:CWEVulnerability" id="_oBdkwDl0EeyxuvclpmtFmA" entityName="Airline Resource Container" attackVector="Network" takeOver="true" cweID="//@categoryspecification/@categories.4"/>
+    <vulnerability xsi:type="attack:CWEVulnerability" id="_89t8QDl0EeyxuvclpmtFmA" entityName="LinkingResource Internet" attackVector="Network" cweID="//@categoryspecification/@categories.4">
+      <gainedAttributes href="test_model.context#_Kpsc4QZYEeyAI7-VwtP_pw"/>
+    </vulnerability>
   </vulnerabilites>
   <categoryspecification>
     <categories xsi:type="attack:CWEID" entityName="Deserialization of Untrusted Data" cweID="502" parents="//@categoryspecification/@categories.2"/>
@@ -47,17 +45,6 @@
       <pcmelement id="_OVv_EDl1EeyxuvclpmtFmA">
         <linkingresource href="../../default.resourceenvironment#_67lcMMN9EeWPE-QAhbUzuQ"/>
       </pcmelement>
-    </vulnerabilities>
-    <vulnerabilities xsi:type="attacker:Mitigation" id="_7NYecJ46Eeyp7JoifEwe_g">
-      <mitigationspecification xsi:type="attacker:Encryption" id="_8W2A4Z46Eeyp7JoifEwe_g">
-        <necessaryCredentials href="test_model.context#_SllT8Z47Eeyp7JoifEwe_g"/>
-      </mitigationspecification>
-      <datamodelcontainer>
-        <datamodelattacker id="_dpbb4J47Eeyp7JoifEwe_g" referenceName="queryFlights">
-          <dataType xsi:type="repository:CollectionDataType" href="../../default.repository#_c0gL8GzqEeqas-IKudlqKw"/>
-          <method href="../../default.repository#_CaJXkGzrEeqas-IKudlqKw"/>
-        </datamodelattacker>
-      </datamodelcontainer>
     </vulnerabilities>
   </systemintegration>
 </attacker:AttackerSpecification>
