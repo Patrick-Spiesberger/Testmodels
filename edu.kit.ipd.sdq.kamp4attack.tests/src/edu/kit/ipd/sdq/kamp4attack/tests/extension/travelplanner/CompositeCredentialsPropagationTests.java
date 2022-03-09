@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Set;
-import java.util.stream.Collectors;
 
 import org.junit.jupiter.api.Test;
 import org.palladiosimulator.pcm.confidentiality.context.system.UsageSpecification;
@@ -25,12 +24,6 @@ public class CompositeCredentialsPropagationTests extends CompositeTravelPlanner
 		var change = getCredentials();
 
 		assertEquals(5, change.getCompromisedassembly().size());
-
-		System.out
-				.println(change
-						.getCompromisedassembly().stream().map(e -> e.getAffectedElement().getCompromisedComponents()
-								.stream().map(f -> f.getEntityName()).collect(Collectors.toList()))
-						.collect(Collectors.toList()));
 		assertEquals(0, change.getCompromisedlinkingresource().size());
 		assertEquals(1, change.getCompromisedresource().size());
 		assertEquals(6, change.getCompromisedservice().size());
@@ -46,8 +39,8 @@ public class CompositeCredentialsPropagationTests extends CompositeTravelPlanner
 
 	@Override
 	protected boolean assemblyNameMatch(String name) {
-		var set = Set.of("Assembly_TravelPlanner", "travelPlanner", "Assembly_CreditCardCenter",
-				"Assembly_CreditCardCenterDB", "Assembly_CreditCardCenterLogic", "Assembly_TravelPlannerLogic");
+		var set = Set.of("Assembly_TravelPlanner", "Assembly_CreditCardCenter", "Assembly_CreditCardCenterDB",
+				"Assembly_CreditCardCenterLogic", "Assembly_TravelPlannerLogic");
 		return set.contains(name);
 	}
 
@@ -69,8 +62,8 @@ public class CompositeCredentialsPropagationTests extends CompositeTravelPlanner
 
 	@Override
 	protected boolean checkServiceRestriction(ServiceRestriction servicerestriction1) {
-		var setAssembly = Set.of("Assembly_TravelPlanner", "travelPlanner", "Assembly_CreditCardCenter",
-				"Assembly_CreditCardCenterDB", "Assembly_CreditCardCenterLogic", "Assembly_TravelPlannerLogic");
+		var setAssembly = Set.of("Assembly_TravelPlanner", "Assembly_CreditCardCenter", "Assembly_CreditCardCenterDB",
+				"Assembly_CreditCardCenterLogic", "Assembly_TravelPlannerLogic");
 
 		var equalAssembly = setAssembly.contains(servicerestriction1.getAssemblycontext().getEntityName());
 		if (!equalAssembly) {

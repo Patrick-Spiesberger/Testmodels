@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <context:ConfidentialAccessSpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.palladiosimulator.org/pcm/confidentiality/context/0.1/" xmlns:systemcontext="http://www.palladiosimulator.org/pcm/confidentiality/context/systemcontext/0.1/">
-  <pcmspecificationcontainer id="_TW6x0PXoEeub3tcXgMY_nQ"/>
+  <pcmspecificationcontainer id="_TW6x0PXoEeub3tcXgMY_nQ">
+    <usagespecification id="_dfnbsZ8DEeyCKPxfJb2_5w" entityName="2fa" attributevalue="_FIbdMJvIEeySpfO2ARTgng" attribute="_8SD5cpvHEeySpfO2ARTgng"/>
+  </pcmspecificationcontainer>
   <policyset id="_SmfacfXoEeub3tcXgMY_nQ" entityName="Travelplaner Case Study" combiningAlgorithm="PERMIT_UNLESS_DENY"/>
   <attributes>
     <attribute xsi:type="systemcontext:SimpleAttribute" id="_fG18ovXoEeub3tcXgMY_nQ" entityName="Role">

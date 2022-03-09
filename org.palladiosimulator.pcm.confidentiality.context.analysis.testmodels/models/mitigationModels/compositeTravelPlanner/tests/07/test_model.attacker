@@ -46,23 +46,21 @@
         <linkingresource href="../../default.resourceenvironment#_67lcMMN9EeWPE-QAhbUzuQ"/>
       </pcmelement>
     </vulnerabilities>
-    <vulnerabilities xsi:type="attacker:Mitigation" id="_brXoMJ5FEeyp7JoifEwe_g">
-      <pcmelement id="_dprH8J5FEeyp7JoifEwe_g">
-        <assemblycontext href="../../default.repository#_AExvsG28EeqTytEGo1dJMQ"/>
-      </pcmelement>
-      <mitigationspecification xsi:type="pcmIntegration:Prevention" id="_b6JEAp5FEeyp7JoifEwe_g"/>
-    </vulnerabilities>
     <vulnerabilities xsi:type="attacker:Mitigation" id="_fWWFIJ5FEeyp7JoifEwe_g">
       <pcmelement id="_hGB6EJ5FEeyp7JoifEwe_g">
-        <assemblycontext href="../../default.system#_8q2rsG2pEeqDl7X_Gyem8w"/>
+        <assemblycontext href="../../default.system#_18D4cG2pEeqDl7X_Gyem8w"/>
       </pcmelement>
-      <mitigationspecification xsi:type="pcmIntegration:Prevention" id="_gR8xwp5FEeyp7JoifEwe_g"/>
+      <mitigationspecification xsi:type="pcmIntegration:Prevention" id="_gR8xwp5FEeyp7JoifEwe_g">
+        <necessaryCredentials href="test_model.context#_dfnbsZ8DEeyCKPxfJb2_5w"/>
+      </mitigationspecification>
     </vulnerabilities>
     <vulnerabilities xsi:type="attacker:Mitigation" id="_osSg0J5FEeyp7JoifEwe_g">
       <pcmelement id="_p1vcMJ5FEeyp7JoifEwe_g">
-        <assemblycontext href="../../default.repository#_o_iRsG0nEeqy5fNd4LSp3w"/>
+        <assemblycontext href="../../default.repository#_sAVC0G0fEeqKyf48wo8qfA"/>
       </pcmelement>
-      <mitigationspecification xsi:type="pcmIntegration:Prevention" id="_o9KOYp5FEeyp7JoifEwe_g"/>
+      <mitigationspecification xsi:type="pcmIntegration:Prevention" id="_o9KOYp5FEeyp7JoifEwe_g">
+        <necessaryCredentials href="test_model.context#_dfnbsZ8DEeyCKPxfJb2_5w"/>
+      </mitigationspecification>
     </vulnerabilities>
   </systemintegration>
 </attacker:AttackerSpecification>
